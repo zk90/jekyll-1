@@ -1,9 +1,6 @@
 ---
 title: Georeferencing in QGIS 2.0
-authors:
-- Jim Clifford
-- Josh MacFadyen
-- Daniel Macfarlane
+author: Jim Clifford, Josh MacFadyen, Daniel Macfarlane
 date: 2013-12-13
 reviewers: Finn Arne Jørgensen, Peter Webster, Abby Schreiber, Adam Crymble
 layout: default

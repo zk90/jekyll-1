@@ -38,14 +38,14 @@
 
 <div class="content">
 <h2>Lesson Goals</h2>
-<p>Your list is now clean enough that you can begin analyzing its contents in meaningful ways. Counting the frequency of specific words in the list can provide illustrative data. Python has an easy way to count frequencies, but it requires the use of a new type of variable: the <span class="tech">dictionary</span>. Before you begin working with a dictionary, consider the processes used to calculate frequencies in a list.</p>
+<p>Your list is now clean enough that you can begin analyzing its contents in meaningful ways. Counting the frequency of specific words in the list can provide illustrative data. Python has an easy way to count frequencies, but it requires the use of a new type of variable: the <em>dictionary</em>. Before you begin working with a dictionary, consider the processes used to calculate frequencies in a list.</p>
 <h3>Files Needed For This Lesson</h3>
 <ul>
 <li><code>obo.py</code></li>
 </ul>
 <p>If you do not have these files from the previous lesson, you can download a <a href="/lessons/from-html-to-list-of-words-2#codesync">zip file from the previous lesson here.</a></p>
 <h2>Frequencies</h2>
-<p>Now we want to count the frequency of each word in our list. You’ve already seen that it is easy to process a list by using a for loop. Try saving and executing the following example. Recall that <span class="reserved">+=</span> tells the program to append something to the end of an existing variable.</p>
+<p>Now we want to count the frequency of each word in our list. You’ve already seen that it is easy to process a list by using a for loop. Try saving and executing the following example. Recall that <code>+=</code> tells the program to append something to the end of an existing variable.</p>
 <pre class="python"># count-list-items-1.py
 
 wordstring = 'it was the best of times it was the worst of times '
@@ -61,7 +61,7 @@ print "String\n" + wordstring +"\n"
 print "List\n" + str(wordlist) + "\n"
 print "Frequencies\n" + str(wordfreq) + "\n"
 print "Pairs\n" + str(zip(wordlist, wordfreq))</pre>
-<p>Here, we start with a string and split it into a list, as we’ve done before. We then create an (initially empty) list called <span class="var">wordfreq</span>, go through each word in the <span class="var">wordlist</span>, and count the number of times that word appears in the whole list. We then add each word’s count to our <span class="var">wordfreq</span> list. Using the <span class="tech">zip</span> operation, we are able to match the first word of the word list with the first number in the frequency list, the second word and second frequency, and so on. We end up with a list of word and frequency pairs. The <span class="tech">str</span> function converts any object to a string so that it can be printed.</p>
+<p>Here, we start with a string and split it into a list, as we’ve done before. We then create an (initially empty) list called <span class="var">wordfreq</span>, go through each word in the <span class="var">wordlist</span>, and count the number of times that word appears in the whole list. We then add each word’s count to our <span class="var">wordfreq</span> list. Using the <em>zip</em> operation, we are able to match the first word of the word list with the first number in the frequency list, the second word and second frequency, and so on. We end up with a list of word and frequency pairs. The <em>str</em> function converts any object to a string so that it can be printed.</p>
 <p>You should get something like this:</p>
 <pre class="python">String
 it was the best of times it was the worst of times it was the age of wisdom it was the age of foolishness
@@ -84,7 +84,7 @@ Pairs
 ('wisdom', 1), ('it', 4), ('was', 4), ('the', 4),
 ('age', 2), ('of', 4), ('foolishness', 1)]</pre>
 <p>It will pay to study the above code until you understand it before moving on.</p>
-<p>Python also includes a very convenient tool called a <span class="tech"><a href="http://docs.python.org/tutorial/datastructures.html#list-comprehensions" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.python.org']);" target="_blank">list comprehension</a></span>, which can be used to do the same thing as the for loop more economically.</p>
+<p>Python also includes a very convenient tool called a <em><a href="http://docs.python.org/tutorial/datastructures.html#list-comprehensions" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.python.org']);" target="_blank">list comprehension</a></em>, which can be used to do the same thing as the for loop more economically.</p>
 <pre class="python"># count-list-items-1.py
 
 wordstring = 'it was the best of times it was the worst of times '
@@ -120,7 +120,7 @@ print m[0][1]
 
 print m[1][0]
 -&gt; w</pre>
-<p>To keep track of frequencies, we’re going to use another type of Python object, a dictionary. The dictionary is an <span class="tech">unordered</span> collection of objects. That means that you can’t use an index to retrieve elements from it. You can, however, look them up by using a <span class="tech">key</span> (hence the name “dictionary”). Study the following example.</p>
+<p>To keep track of frequencies, we’re going to use another type of Python object, a dictionary. The dictionary is an <em>unordered</em> collection of objects. That means that you can’t use an index to retrieve elements from it. You can, however, look them up by using a <em>key</em> (hence the name “dictionary”). Study the following example.</p>
 <pre class="python">d = {'world': 1, 'hello': 0}
 print d['hello']
 -&gt; 0
@@ -130,10 +130,10 @@ print d['world']
 
 print d.keys()
 -&gt; ['world', 'hello']</pre>
-<p>Dictionaries might be a bit confusing to a new programmer. Try to think of it like a language dictionary. If you don’t know (or remember) exactly how “bijection” differs from “surjection” you can look the two terms up in the <span class="pub">Oxford English Dictionary</span>. The same principle applies when you <span class="reserved">print d['hello']</span>; except, rather than print a literary definition it prints the value associated with the keyword <span class="var">“hello”</span>, as defined by you when you created the dictionary named <span class="var">d</span>. In this case, that value is “<span class="var">0</span>“.</p>
-<p>Note that you use curly braces to define a dictionary, but square brackets to access things within it. The <span class="reserved">keys</span> operation returns a list of keys that are defined in the dictionary.</p>
+<p>Dictionaries might be a bit confusing to a new programmer. Try to think of it like a language dictionary. If you don’t know (or remember) exactly how “bijection” differs from “surjection” you can look the two terms up in the <span class="pub">Oxford English Dictionary</span>. The same principle applies when you <code>print d['hello']</code>; except, rather than print a literary definition it prints the value associated with the keyword <span class="var">“hello”</span>, as defined by you when you created the dictionary named <span class="var">d</span>. In this case, that value is “<span class="var">0</span>“.</p>
+<p>Note that you use curly braces to define a dictionary, but square brackets to access things within it. The <code>keys</code> operation returns a list of keys that are defined in the dictionary.</p>
 <h2 class="sub">Word-Frequency Pairs</h2>
-<p>Building on what we have so far, we want a function that can convert a list of words into a dictionary of word-frequency pairs. The only new command that we will need is <span class="tech">dict</span>, which makes a dictionary from a list of pairs. Copy the following and add it to the <code>obo.py</code> module.</p>
+<p>Building on what we have so far, we want a function that can convert a list of words into a dictionary of word-frequency pairs. The only new command that we will need is <em>dict</em>, which makes a dictionary from a list of pairs. Copy the following and add it to the <code>obo.py</code> module.</p>
 <pre class="python"># Given a list of words, return a dictionary of
 # word-frequency pairs.
 
