@@ -1,8 +1,6 @@
 ---
 title: Working With Web Pages
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel & Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -11,24 +9,25 @@ layout: default
 Lesson Goals
 ------------
 
-This lesson introduces Uniform Resource Locators (URLs) and explains how
-to use Python to download and save the contents of a web page to your
-local hard drive.
+This lesson introduces *Uniform Resource Locators* (URLs) and explains
+how to use Python to *download* and *save* the contents of a web page to
+your local hard drive.
 
 ### About URLs
 
-A web page is a file that is stored on another computer, a machine known
-as a web server. When you “go to” a web page, what is actually happening
-is that your computer, the client, sends a request to the server (the
-host) out over the network, and the server replies by sending a copy of
-the page back to your machine. One way to get to a web page with your
-browser is to follow a link from somewhere else. You also have the
-ability, of course, to paste or type a Uniform Resource Locator (URL)
-directly into your browser. The URL tells your browser where to find an
-online resource by specifying the server, directory and name of the file
-to be retrieved, as well as the kind of protocol that the server and
-your browser will agree to use while exchanging information (like HTTP,
-the Hypertext Transfer Protocol). The basic structure of a URL is
+A *web page* is a file that is stored on another computer, a machine
+known as a *web server*. When you “go to” a web page, what is actually
+happening is that your computer, the *client*, sends a request to the
+server (the *host*) out over the network, and the server replies by
+sending a copy of the page back to your machine. One way to get to a web
+page with your browser is to follow a link from somewhere else. You also
+have the ability, of course, to paste or type a *Uniform Resource
+Locator* (URL) directly into your browser. The URL tells your browser
+where to find an online resource by specifying the server, directory and
+name of the file to be retrieved, as well as the kind of *protocol* that
+the server and your browser will agree to use while exchanging
+information (like HTTP, the *Hypertext Transfer Protocol*). The basic
+structure of a URL is
 
 ```
 protocol://host:port/path?query
@@ -45,7 +44,7 @@ you give this URL to your browser, it will return the main page of The
 [Old Bailey Online][] website. The default assumption is that the main
 page in a given directory will be named index, usually `index.html`.
 
-The URL can also include an optional port number. Without getting into
+The URL can also include an optional *port number*. Without getting into
 too much detail at this point, the network protocol that underlies the
 exchange of information on the Internet allows computers to connect in
 different ways. Port numbers are used to distinguish these different
@@ -67,7 +66,7 @@ http://oldbaileyonline.org/static/Project.jsp
 
 Finally, some web pages allow you to enter queries. The Old Bailey
 Online website, for example, is laid out in such a way that you can
-request a particular page within it by using a query string. The
+request a particular page within it by using a *query string*. The
 following URL will take you to a search results page for criminal record
 trials containing the word “arsenic”.
 
@@ -75,8 +74,8 @@ trials containing the word “arsenic”.
 http://www.oldbaileyonline.org/search.jsp?form=custom&_divs_fulltext=arsenic
 ```
 
-The snippet after the “?” represents the query. You can learn more about
-building queries in [Downloading Multiple Records Using Query
+The snippet after the “`?`” represents the query. You can learn more
+about building queries in [Downloading Multiple Records Using Query
 Strings][].
 
 ### Opening URLs with Python
@@ -95,7 +94,9 @@ in eighteenth century Britain. [The Old Bailey Online][Old Bailey
 Online] (OBO) is a rich resource that provides trial transcripts from
 1674 to 1913 and is one good place to seek sources.
 
-{% include figure.html src="../images/old-bailey.png" caption="The Old Bailey Online Homepage" %}
+![Old][]
+
+The Old Bailey Online Homepage 
 
 For this example, we will be using the trial transcript of Benjamin
 Bowsey, a “black moor” who was convicted of breaking the peace during
@@ -106,7 +107,7 @@ http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33
 ```
 
 By studying the URL we can learn a few things. First, The OBO is written
-in JSP (JavaServer Pages, a web programming language which outputs
+in JSP (*JavaServer Pages*, a web programming language which outputs
 HTML), and it’s possible to retrieve individual trial entries by making
 use of the query string. Each is apparently given a unique ID number
 (id=t in the URL), built from the date of the trial session in the
@@ -115,7 +116,9 @@ in this case: 33. If you change the two instances of `33` to `34` in
 your browser and press Enter, you should be taken to the next trial.
 Unfortunately, not all websites have such readable and reliable URLs.
 
-{% include figure.html src="../images/bowsey-trial-page.png" caption="Trial Transcript Page of Benjamin Bowsey, 1780" %}
+![][]
+
+Trial Transcript Page of Benjamin Bowsey, 1780.
 
 Spend a few minutes looking at Benjamin Bowsey’s trial page. Here we are
 not so much interested in what the transcript says, but what features
@@ -137,8 +140,8 @@ http://www.oldbaileyonline.org/print.jsp?div=t17800628-33
 
 Now let’s try opening the page using Python. Copy the following program
 into Komodo Edit and save it as `open-webpage.py`. When you execute the
-program, it will open the trial file, read its contents into a Python
-string called webContent and then print the first three hundred
+program, it will `open` the trial file, `read` its contents into a
+Python string called webContent and then `print` the first three hundred
 characters of the string to the “Command Output” pane. Use the
 `View -> Web Developer -> View Page Source` command in Firefox to verify
 that the HTML source of the page is the same as the source that your
@@ -177,8 +180,8 @@ open the website found at the URL we just specified. We then saved the
 result of that process into a variable named response. That variable now
 contains an open version of the requested website.
 
-We then use the read method, which we used earlier, to copy the contents
-of that open webpage into a new variable named webContent.
+We then use the `read` method, which we used earlier, to copy the
+contents of that open webpage into a new variable named webContent.
 
 Make sure you can pick out the variables (there are 3 of them), the
 modules (1), the methods (2), and the parameters (1) before you move on.

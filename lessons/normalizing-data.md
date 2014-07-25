@@ -1,8 +1,6 @@
 ---
 title: Normalizing Data
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel & Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford, Francesca Benatti
 layout: default
@@ -12,10 +10,10 @@ Lesson Goals
 ------------
 
 The list that we created in the [From HTML to a List of Words (2)][]
-needs some normalizing before it can be used further. We are going to do
-this by applying additional string methods, as well as by using regular
-expressions. Once normalized, we will be able to more easily analyze our
-data.
+needs some *normalizing* before it can be used further. We are going to
+do this by applying additional string methods, as well as by using
+*regular expressions*. Once normalized, we will be able to more easily
+analyze our data.
 
 ### Files Needed For This Lesson
 
@@ -31,7 +29,7 @@ Cleaning up the List
 In [From HTML to a List of Words (2)][], we wrote a Python program
 called *`html-to-list-1.py`* which downloaded a [web page][], stripped
 out the HTML formatting and metadata and returned a list of “words” like
-the one shown below. Technically, these entities are called “tokens”
+the one shown below. Technically, these entities are called “*tokens*”
 rather than “words”. They include some things that are, strictly
 speaking, not words at all (like the abbreviation &c. for “etcetera”).
 They also include some things that may be considered composites of more
@@ -39,7 +37,7 @@ than one word. The possessive “Akerman’s,” for example, is sometimes
 analyzed by linguists as two words: “Akerman” plus a possessive marker.
 Is “o’clock” one word or two? And so on.
 
-Turn back to your program *html-to-list-1.py* and make sure that your
+Turn back to your program **html-to-list-1.py** and make sure that your
 results look something like this:
 
 ``` python
@@ -87,12 +85,12 @@ So, the steps involved might look like this:
 Convert to Lower Case
 ---------------------
 
-Typically tokens are folded to lower case when counting frequencies, so
-we’ll do that using the string method lower which was introduced in
+Typically tokens are *folded* to lower case when counting frequencies,
+so we’ll do that using the string method `lower` which was introduced in
 [Manipulating Strings in Python][]. Since this is a string method we
 will have to apply it to the string: text in the *`html-to-list1.py`*
-program. Amend *`html-to-list1.py`* by adding the string tag lower() to
-the the end of the text string.
+program. Amend *`html-to-list1.py`* by adding the string tag `lower()`
+to the the end of the text string.
 
 ``` python
 #html-to-list1.py
@@ -146,7 +144,7 @@ punctuation to get rid of. Punctuation will throw off our frequency
 counts if we leave them in. We want “evening?” to be counted as
 “evening” and “1780.” as “1780″, of course.
 
-It is possible to use the replace string method to remove each type of
+It is possible to use the `replace` string method to remove each type of
 punctuation:
 
 ``` python
@@ -157,23 +155,23 @@ text = text.replace(',', '')
 ```
 
 But that’s not very efficient. In keeping with our goal of creating
-short, powerful programs, we’re going to use a mechanism called regular
-expressions. Regular expressions are provided by many programming
+short, powerful programs, we’re going to use a mechanism called *regular
+expressions*. Regular expressions are provided by many programming
 languages in a range of different forms.
 
 Regular expressions allow you to search for well defined patterns and
 can drastically shorten the length of your code. For instance, if you
 wanted to know if a substring matched a letter of the alphabet, rather
-than use an if/else statement to check if it matched the letter “a” then
-“b” then “c”, and so on, you could use a regular expression to see if
-the substring matched a letter between “a” and “z”. Or, you could check
-for the presence of a digit, or a capital letter, or any alphanumeric
-character, or a carriage return, or any combination of the above, and
-more.
+than use an `if/else` statement to check if it matched the letter “a”
+then “b” then “c”, and so on, you could use a regular expression to see
+if the substring matched a letter between “a” and “z”. Or, you could
+check for the presence of a digit, or a capital letter, or any
+alphanumeric character, or a carriage return, or any combination of the
+above, and more.
 
 In Python, regular expressions are available as a Python module. To
 speed up processing it is not loaded automatically because not all
-programs require it. So, you will have to import the module (called
+programs require it. So, you will have to `import` the module (called
 `re`) in the same way that you imported your *`obo.py`* module.
 
 Since we’re interested in only alphanumeric characters, we’ll create a
@@ -192,13 +190,13 @@ def stripNonAlphaNum(text):
 ```
 
 The regular expression in the above code is the material inside the
-string, in other words W+. The W is shorthand for the class of
-non-alphanumeric characters. In a Python regular expression, the plus
-sign (+) matches one or more copies of a given character. The re.UNICODE
-tells the interpreter that we want to include characters from the
-world’s other languages in our definition of “alphanumeric”, as well as
-the A to Z, a to z and 0-9 of English. Regular expressions have to be
-compiled before they can be used, which is what the rest of the
+string, in other words `W+`. The `W` is shorthand for the class of
+*non-alphanumeric characters*. In a Python regular expression, the plus
+sign (`+`) matches one or more copies of a given character. The
+`re.UNICODE` tells the interpreter that we want to include characters
+from the world’s other languages in our definition of “alphanumeric”, as
+well as the A to Z, a to z and 0-9 of English. Regular expressions have
+to be *compiled* before they can be used, which is what the rest of the
 statement does. Don’t worry about understanding the compilation part
 right now.
 

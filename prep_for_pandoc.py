@@ -79,10 +79,14 @@ for file in files:
                brush = block.attrs['class'][1]
                if brush != 'plain;': block.attrs = {'class': brush.rstrip(';')}
 
-        # change monospace inline spans to code tags
-        spans = soup.find_all('span', class_=re.compile('filename|userinput'))
-        for span in spans:
+        # change inline spans to code or emphasis tags
+        code_spans = soup.find_all('span', class_=re.compile('filename|userinput|reserved'))
+        for span in code_spans:
             span.name = 'code'
+            span.attrs = {}
+        ital_spans = soup.find_all('span', class_=re.compile('tech'))
+        for span in ital_spans:
+            span.name = 'em'
             span.attrs = {}
 
         # change figures and figcaptions

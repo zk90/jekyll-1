@@ -1,8 +1,6 @@
 ---
 title: Code Reuse and Modularity
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel & Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -13,10 +11,10 @@ Lesson Goals
 
 Computer programs can become long, unwieldy and confusing without
 special mechanisms for managing complexity. This lesson will show you
-how to reuse parts of your code by writing Functions and break your
-programs into Modules, in order to keep everything concise and easier to
-debug. Being able to remove a single dysfunctional module can save time
-and effort.
+how to reuse parts of your code by writing *Functions* and break your
+programs into *Modules*, in order to keep everything concise and easier
+to debug. Being able to remove a single dysfunctional module can save
+time and effort.
 
 ### Functions
 
@@ -39,17 +37,17 @@ greetEntity("Everybody")
 greetEntity("Programming Historian")
 ```
 
-The line beginning with “def” is the function declaration. We are going
-to define (“def“) a function, which in this case we have named
+The line beginning with “`def`” is the *function declaration*. We are
+going to define (“`def`“) a function, which in this case we have named
 “greetEntity“. The (x) is the function’s parameter. You should
 understand how that works in a moment. The second line contains the code
 of the function. This could be as many lines as we need, but in this
 case it is only a single line.
 
-Note that indentation is very important in Python. The blank space
-before the print statement tells the interpreter that it is part of the
-function that is being defined. You will learn more about this as we go
-along; for now, make sure to keep indentation the way we show it. Run
+Note that *indentation* is very important in Python. The blank space
+before the `print` statement tells the interpreter that it is part of
+the function that is being defined. You will learn more about this as we
+go along; for now, make sure to keep indentation the way we show it. Run
 the program, and you should see something like this:
 
 ``` python
@@ -58,7 +56,7 @@ hello Programming Historian
 ```
 
 This example contains one function: greetEntity. This function is then
-“called” (sometimes referred to as “invoked”) two times. Calling or
+“*called*” (sometimes referred to as “invoked”) two times. Calling or
 invoking a function just means we have told the program to execute the
 code in that function. Like giving the dog his chicken-flavoured treat
 (\*woof\* \*woof\*). In this case each time we have called the function
@@ -93,7 +91,7 @@ by being able to pinpoint the source of the error. When you break a
 program into modules, you are also able to hide the details for how
 something is done within the module that does it. Other modules don’t
 need to know how something is accomplished if they are not responsible
-for doing it. This need-to-know principle is called “encapsulation“.
+for doing it. This need-to-know principle is called “*encapsulation*“.
 
 Suppose you were building a car. You could start adding pieces willy
 nilly, but it would make more sense to start by building and testing one
@@ -105,9 +103,9 @@ try to break a problem into smaller pieces, and solve those first.
 
 You already created a module when you wrote the `greet.py` program. Now
 you are going to write a second program, `using-greet.py` which will
-import code from your module and make use of it. Python has a special
-import statement that allows one program to gain access to the contents
-of another program file. This is what you will be using.
+`import` code from your module and make use of it. Python has a special
+`import` statement that allows one program to gain access to the
+contents of another program file. This is what you will be using.
 
 Copy this code to Komodo Edit and save it as `using-greet.py`. This file
 is your program; `greet.py` is your module.
@@ -120,13 +118,13 @@ greet.greetEntity("everybody")
 greet.greetEntity("programming historian")
 ```
 
-We have done a few things here. First, we have told Python to “import”
+We have done a few things here. First, we have told Python to “`import`”
 (load) the `greet.py` module, which we previously created.
 
 You will also notice that whereas before we were able to run the
 function by calling only it’s name: greetEntity(“everybody”), we now
-need to include the module’s name followed by a dot (.) in front of the
-function name. In plain English this means: run the greetEntity
+need to include the module’s name followed by a dot (`.`) in front of
+the function name. In plain English this means: run the greetEntity
 function, which you should find in the `greet.py` module.
 
 You can run your `using-greet.py` program with the “Run Python” command

@@ -1,7 +1,6 @@
 ---
 title: Downloading Multiple Records Using Query Strings
-authors:
-- Adam Crymble
+author: Adam Crymble
 date: 2012-11-11
 reviewers: Fred Gibbs, Fred Gibbs, Luke Bergmann
 layout: default
@@ -16,9 +15,10 @@ much more efficient using a programming language such as Python. In this
 lesson, we will write a program that will download a series of records
 from the [Old Bailey Online][] using custom search criteria, and save
 them to a directory on our computer. This process involves interpreting
-and manipulating URL Query Strings. In this case, the tutorial will seek
-to download sources that contain references to people of African descent
-that were published in the Old Bailey Proceedings between 1700 and 1750.
+and manipulating URL *Query Strings*. In this case, the tutorial will
+seek to download sources that contain references to people of African
+descent that were published in the Old Bailey Proceedings between 1700
+and 1750.
 
 For Whom is this Useful?
 ------------------------
@@ -148,17 +148,17 @@ http://www.oldbaileyonline.org/search.jsp
 
 In this view, we see more clearly our 12 important pieces of information
 that we need to perform our search (one per line). On the first is the
-Old Bailey’s base website URL, followed by a query: “?” (don’t worry
+Old Bailey’s base website URL, followed by a `query: `“?” (don’t worry
 about the foo=bar bit; the developers of the Old Bailey Online say that
-it does not do anything.) and a series of 10 name/value pairs put
-together with & characters. Together these 10 name/value pairs comprise
-the query string, which tells the search engine what variables to use in
-specific stages of the search. Notice that each name/value pair contains
-both a variable name: toYear, and then assigns that variable a value:
-1750. This works in exactly the same way as Function Arguments by
-passing certain information to specific variables. In this case, the
-most important variable is \_divs\_fulltext= which has been given the
-value:
+it does not do anything.) and a series of 10 *name/value pairs* put
+together with & characters. Together these 10 *name/value pairs*
+comprise the *query string*, which tells the search engine what
+variables to use in specific stages of the search. Notice that each
+*name/value pair* contains both a variable name: toYear, and then
+assigns that variable a value: 1750. This works in exactly the same way
+as *Function Arguments* by passing certain information to specific
+variables. In this case, the most important variable is
+\_divs\_fulltext= which has been given the value:
 
 ```
 mulatto*+negro*
@@ -174,7 +174,7 @@ this is how the search algorithm ensures all records from that year are
 included. There are no hard and fast rules for figuring out what each
 variable does because the person who built the site gets to name them.
 Often you can make an educated guess. All of the possible search fields
-on the Advanced Search page have their own name/value pair. If you’d
+on the Advanced Search page have their own *name/value* pair. If you’d
 like to find out the name of the variable so you can use it, do a new
 search and make sure you put a value in the field in which you are
 interested. After you submit your search, you’ll see your value and the
@@ -186,11 +186,11 @@ are represented in the URL – which is often quite straightforward – then
 it becomes relatively simple to programmatically construct these URLs
 and thus to automate the process of downloading records.
 
-Now try changing the “**start=0**” to “**start=10**” and hit enter. You
-should now have results 11-13. The “start” variable tells the website
-which entry should be shown at the top of the search results list. We
-should be able to use this knowledge to create a series of URLs that
-will allow us to download all 13 files. Let’s turn to that now.
+Now try changing the “**`start=0`**” to “**`start=10`**” and hit enter.
+You should now have results 11-13. The “start” variable tells the
+website which entry should be shown at the top of the search results
+list. We should be able to use this knowledge to create a series of URLs
+that will allow us to download all 13 files. Let’s turn to that now.
 
 Systematically Downloading Files
 --------------------------------
@@ -244,8 +244,8 @@ We could type this URL out twice and alter the ‘start’ variable to get
 us all 13 entries, but let’s write a program that would work no matter
 how many search results pages or records we had to download, and no
 matter what we decide to search for. Study this code and then add this
-function to your `obo.py` module. The comments in the code are meant to
-help you decipher the various parts.
+*function* to your `obo.py` module. The comments in the code are meant
+to help you decipher the various parts.
 
 ``` python
 def getSearchResults(query, kwparse, fromYear, fromMonth, toYear, toMonth):
@@ -275,8 +275,8 @@ def getSearchResults(query, kwparse, fromYear, fromMonth, toYear, toMonth):
     f.close
 ```
 
-In this function we have split up the various Query String components
-and used Function Arguments so that this function can be reused beyond
+In this function we have split up the various *Query String* components
+and used *Function Arguments* so that this function can be reused beyond
 our specific needs right now. When we call this function we will replace
 the arguments with the values we want to search for. We then download
 the search results page in a similar manner as done in [Working with
@@ -316,9 +316,9 @@ pageCount = entries / 10
 
 However, because pageCount is an integer and cannot have decimal places
 or remainders, Python will drop the remainder. You can test this by
-running this code in your Terminal (Mac & Linux) / Python Command Line
-(Windows) and printing out the value held in pageCount. (Note, from here
-on, we will use the word Terminal to refer to this program).
+running this code in your *Terminal* (Mac & Linux) / *Python Command
+Line* (Windows) and printing out the value held in pageCount. (Note,
+from here on, we will use the word *Terminal* to refer to this program).
 
 ``` python
 entries = 13
@@ -331,7 +331,7 @@ We know this should read 2 (one page containing entries 1-10, and one
 page containing entries 11-13). Since there is a remainder to this
 problem (of 3, but it doesn’t matter what the remainder is), the last 3
 results won’t be downloaded, as we’ll only grab 1 page of 10 results. To
-get around this problem we use the [modulo][] operator (%) in place of
+get around this problem we use the *[modulo][]* operator (%) in place of
 the usual division operator (/). Modulo divides the first value by the
 second and returns the remainder. So if the remainder is more than 0, we
 know there is a partial page of results, and we need to increase the
@@ -346,9 +346,9 @@ if remainder > 0:
 ```
 
 If we add this to our getSearchResults function just under the
-startValue = 0 line, our program, the code can now calculate the number
-of pages that need to be downloaded. However, at this stage it will
-still only download the first page since we have only told the
+`startValue = 0` line, our program, the code can now calculate the
+number of pages that need to be downloaded. However, at this stage it
+will still only download the first page since we have only told the
 downloading section of the function to run once. To correct this, we can
 add that downloading code to a for loop which will download once for
 every number in the pageCount variable. If it reads 1, then it will
@@ -365,8 +365,8 @@ for pages in range(1, pageCount+1):
 Since this is a for loop, all of the code we want to run repeatedly
 needs to be intended as well. You can see if you have done this
 correctly by looking at the finished code example below. This loop takes
-advantage of Python’s [range][] funciton. To understand this for loop it
-is probably best to think of pageCount as equal to 2 as it is in the
+advantage of Python’s [*range*][] funciton. To understand this for loop
+it is probably best to think of pageCount as equal to 2 as it is in the
 example. This two lines of code then means: start running with an
 initial loop value of 1, and each time you run, add 1 more to that
 value. When the loop value is the same as pageCount, run once more and
@@ -374,7 +374,7 @@ then stop. This is particularly valuable for us because it means we can
 tell our program to run exactly once for each search results page and
 provides a flexible new skill for controlling how many times a for loop
 runs. If you would like to practice with this new and powerful way of
-writing for loops, you can open your Terminal and play around.
+writing for loops, you can open your *Terminal* and play around.
 
 ``` python
 pageCount = 2
@@ -417,7 +417,7 @@ getSearchResults function. Recall we have made the following additions:
 
 -   Add entries as an additional function argument right after toMonth
 -   Calculate the number of search results pages and add this
-    immediately after the line that begins with startValue = 0 (before
+    immediately after the line that begins with `startValue = 0` (before
     we build the URL and start downloading)
 -   Follow this immediately with a for loop that will tell the program
     to run once for each search results page, and indent the rest of the
@@ -506,7 +506,7 @@ our search query. This will keep our `programming-historian` directory
 more organized. To do this we will create a new directory using the `os`
 library, short for “operating system”. That library contains a function
 called makedirs, which, unsurprisingly, makes a new directory. You can
-try this out using the Terminal.
+try this out using the *Terminal*.
 
 ``` python
 import os
@@ -597,11 +597,12 @@ a director with a \* in it. Windows does not like this. To get around
 this problem we can use [regular expressions][] to remove any
 non-Windows-friendly characters. We used regular expressions previously
 in [Counting Frequencies][]. To remove non-alpha-numeric characters from
-the query, first import the regular expressions library immediately
-after you have imported the os library, then use the re.sub() function
-to create a new string named cleanQuery that contains only alphanumeric
-characters. You will then have to substitute cleanQuery as the variable
-used in the os.path.exists(), os.makedirs(), and filename declarations.
+the query, first import the `regular expressions` library immediately
+after you have imported the `os` library, then use the `re.sub()`
+function to create a new string named cleanQuery that contains only
+alphanumeric characters. You will then have to substitute cleanQuery as
+the variable used in the os.path.exists(), os.makedirs(), and filename
+declarations.
 
 ``` python
 import urllib2, os, re
@@ -789,13 +790,13 @@ that will download the desired trials.
 That last line of the for loop may look tricky, but make sure you
 understand it before moving on. The words variable is checked to see if
 it contains the characters “id=” (without the quotes), which of course
-refers to a specific trial transcript ID. If it does, we use the slice
-string method to capture only the chunk between id= and & and append it
-to the url list. If we knew the exact index positions of this substring
-we could have used those numerical values instead. However, by using the
-find() string method we have created a much more flexible program. The
-following code does exactly the same thing as that last line in a less
-condensed manner.
+refers to a specific trial transcript ID. If it does, we use the *slice
+string method* to capture only the chunk between `id=` and `&` and
+append it to the *url* list. If we knew the exact index positions of
+this *substring* we could have used those numerical values instead.
+However, by using the `find() string method` we have created a much more
+flexible program. The following code does exactly the same thing as that
+last line in a less condensed manner.
 
 ``` python
 idStart = words.find("id=") + 3
@@ -808,15 +809,15 @@ urls.append(trialID)
 When you re-run `extract-trial-ids.py`, you should now see a list of all
 the trial IDs. We can add a couple extra lines to turn these into proper
 URLs and download the whole list to our new directory. We’ll also use
-the time library to pause our program for three seconds between
-downloads– a technique called throttling. It’s considered good form not
-to pound someone’s server with many requests per second; and the slight
-delay makes it more likely that all the files will actually download
-rather than [time out][]. Add the following code to the end of your
-getIndivTrials() function. This code will generate the URL of each
-individual page, download the page to your computer, place it in your
-new directory, save the file, and pause for 3 seconds before moving on
-to the next trial. This work is all contained in a for loop, and will
+the `time library` to pause our program for three seconds between
+downloads– a technique called *throttling*. It’s considered good form
+not to pound someone’s server with many requests per second; and the
+slight delay makes it more likely that all the files will actually
+download rather than *[time out][]*. Add the following code to the end
+of your getIndivTrials() function. This code will generate the URL of
+each individual page, download the page to your computer, place it in
+your new directory, save the file, and pause for 3 seconds before moving
+on to the next trial. This work is all contained in a for loop, and will
 run once for every trial in your url list.
 
 ``` python
@@ -848,7 +849,7 @@ def getIndivTrials(query):
         time.sleep(3)
 ```
 
-If we put this all together into a single function it should look
+If we put this all together into a single *function* it should look
 something like this. (Note, we’ve put all the “import” calls at the top
 to keep things cleaner).
 
@@ -990,16 +991,16 @@ and uncertainty, we want a fail-safe in our program that will attempt to
 download each trial. If for whatever reason it fails, we’ll make a note
 of it and move on to the next trial.
 
-To do this, we will make use of the Python [try / except][] error
-handling mechanism, as well as a new library: socket. Try and Except are
-a lot like an if / else statement. When you ask Python to try something,
+To do this, we will make use of the Python `try / except` error handling
+mechanism, as well as a new `library: socket`. `Try` and `Except` are a
+lot like an `if / else statement`. When you ask Python to try something,
 it will attempt to run the code; if the code fails to achieve what you
 have defined, it will run the except code. This is often used when
-dealing with errors, known as error handling. We can use this to our
+dealing with errors, known as *error handling*. We can use this to our
 advantage by telling our program to attempt downloading a page. If it
 fails, we’ll ask it to let us know which file failed and then move on.
-To do this we need to use the socket library, which will allow us to put
-a time limit on a download attempt before moving on. This involves
+To do this we need to use the *socket library*, which will allow us to
+put a time limit on a download attempt before moving on. This involves
 altering the getIndivTrials function.
 
 First, we need to load the socket library, which should be done in the
@@ -1024,12 +1025,12 @@ it immediately after the import instructions:
  failedAttempts = []
 ```
 
-Finally, we can add the try / except statement, which is added in much
-the same way as an if / else statement would be. In this case, we will
-put all of the code designed to download and save the trials in the try
-statement, and in the except statement we will tell the program what we
-want it to do if that should fail. Here, we will append the url that
-failed to download to our new list, failedAttempts
+Finally, we can add the `try / except` statement, which is added in much
+the same way as an `if / else` statement would be. In this case, we will
+put all of the code designed to download and save the trials in the
+`try` statement, and in the `except` statement we will tell the program
+what we want it to do if that should fail. Here, we will append the url
+that failed to download to our new list, failedAttempts
 
 ``` python
 #...
@@ -1061,11 +1062,11 @@ print "failed to download: " + str(failedAttempts)
 ```
 
 Now when you run the program, should there be a problem downloading a
-particular file, you will receive a message in the Command Output window
-of Komodo Edit. This message will contain any URLs of files that failed
-to download. If there are only one or two, it’s probably fastest just to
-visit the pages manually and use the “Save As” feature of your browser.
-If you are feeling adventurous, you could modify the program to
+particular file, you will receive a message in the `Command Output`
+window of Komodo Edit. This message will contain any URLs of files that
+failed to download. If there are only one or two, it’s probably fastest
+just to visit the pages manually and use the “Save As” feature of your
+browser. If you are feeling adventurous, you could modify the program to
 automatically download the remaining files. The final version of your
 getSearchResults(), getIndivTrials(), and newDir() functions should now
 look like this:
@@ -1203,10 +1204,9 @@ helpful:
   [Working with Webpages]: /lessons/working-with-web-pages
   [From HTML to a List of Words 2]: /lessons/from-html-to-list-of-words-2
   [modulo]: http://docs.python.org/release/2.5.2/ref/binary.html
-  [range]: http://docs.python.org/2/tutorial/controlflow.html#the-range-function
+  [*range*]: http://docs.python.org/2/tutorial/controlflow.html#the-range-function
   [regular expressions]: http://docs.python.org/2/library/re.html
   [Counting Frequencies]: /lessons/counting-frequencies
   [time out]: http://www.checkupdown.com/status/E408.html
-  [try / except]: http://docs.python.org/tutorial/errors.html
   [Python: Best way to create directory if it doesn’t exist for file
   write?]: http://stackoverflow.com/questions/273192/python-best-way-to-create-directory-if-it-doesnt-exist-for-file-write

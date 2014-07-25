@@ -1,8 +1,6 @@
 ---
 title: Creating and Viewing HTML Files with Python
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel & Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -16,7 +14,7 @@ programs that output HTML, you can use any browser to look at your
 results. This is especially convenient if your program is automatically
 creating hyperlinks or graphic entities like charts and diagrams.
 
-Here you will learn how to create HTML files with Python scripts, and
+Here you will learn how to create HTML files with Python *scripts*, and
 how to use Python to automatically open an HTML file in Firefox.
 
 ### Files Needed For This Lesson
@@ -54,7 +52,7 @@ HTML tags in a multiline Python string and saving the contents to a new
 file. This file will be saved with an `.html` extension rather than a
 `.txt` extension.
 
-Typically an HTML file begins with a [doctype declaration][]. You saw
+Typically an HTML file begins with a *[doctype declaration][]*. You saw
 this when you wrote an HTML “Hello World” program in an earlier lesson.
 To make reading our code easier, we will omit the doctype in this
 example. Recall a multi-line string is created by enclosing the text in

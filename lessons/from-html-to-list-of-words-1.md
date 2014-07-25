@@ -1,8 +1,6 @@
 ---
 title: From HTML to List of Words (part 1)
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel & Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -12,14 +10,14 @@ Lesson Goals
 ------------
 
 In this two-part lesson, we will build on what you’ve learned about
-[Working with Webpages][], learning how to remove the HTML markup from
+[Working with Webpages][], learning how to remove the *HTML markup* from
 the webpage of [Benjamin Bowsey’s 1780 criminal trial transcript][]. We
-will achieve this by using a variety of string operators, string methods
-and close reading skills. We introduce looping and branching so that
-programs can repeat tasks and test for certain conditions, making it
-possible to separate the content from the HTML tags. Finally, we convert
-content from a long string to a list of words that can later be sorted,
-indexed, and counted.
+will achieve this by using a variety of *string operators*, *string
+methods* and close reading skills. We introduce *looping* and
+*branching* so that programs can repeat tasks and test for certain
+conditions, making it possible to separate the content from the HTML
+tags. Finally, we convert content from a long string to a *list of
+words* that can later be sorted, indexed, and counted.
 
 The Challenge
 -------------
@@ -50,7 +48,7 @@ Devising an Algorithm
 ---------------------
 
 Since the goal is to get rid of the HTML, the first step is to create an
-algorithm that returns only the text (minus the HTML tags) of the
+*algorithm* that returns only the text (minus the HTML tags) of the
 article. An algorithm is a procedure that has been specified in enough
 detail that it can be implemented on a computer. It helps to write your
 algorithms first in plain English; it’s a great way to outline exactly
@@ -74,10 +72,10 @@ location of the metadata a potentially useful marker for isolating the
 transcript text.
 
 At a glance, we can see that the metadata ends with two HTML tags:
-\<hr/\>\<h2\>. We might be able to use those to find the starting point
-of our transcript text. We are lucky in this case because it turns out
-that these tags are a reliable way to find the start of transcript text
-in the printable versions (if you want, take a look at a few other
+`<hr/><h2>`. We might be able to use those to find the starting point of
+our transcript text. We are lucky in this case because it turns out that
+these tags are a reliable way to find the start of transcript text in
+the printable versions (if you want, take a look at a few other
 printable trials to check). We are also lucky because other than a few
 HTML tags at the end of the transcript, there is no further information
 on the page. Had there been other unrelated content, we would take a
@@ -100,9 +98,8 @@ The following describes our algorithm in words.
 To isolate the content:
 
 -   Download the transcript text
--   Search the HTML for and store the location of \<hr/\>\<h2\>
--   Save everything after the \<hr/\>\<h2\> tags to a string:
-    pageContents
+-   Search the HTML for and store the location of `<hr/><h2>`
+-   Save everything after the `<hr/><h2>` tags to a string: pageContents
 
 At this point we have the trial transcript text, plus HTML markup. Next:
 
@@ -113,7 +110,7 @@ At this point we have the trial transcript text, plus HTML markup. Next:
 -   If the character is a right angle bracket (\>) we are now leaving
     the tag; ignore the current character, but look at each following
     character
--   If we’re not inside a tag, append the current character to a new
+-   If we’re not inside a tag, `append` the current character to a new
     variable: text
 
 Finally:
@@ -126,15 +123,14 @@ Isolating Desired Content
 
 The following step uses Python commands introduced in the [Manipulating
 Strings in Python][] lesson to implement the first half of the
-algorithm: removing all content before the \<hr/\>\<h2\> tags. To recap,
+algorithm: removing all content before the `<hr/><h2>` tags. To recap,
 the algorithm was as follows:
 
 -   Download the transcript text
--   Search the HTML for and store the location of \<hr/\>\<h2\>
--   Save everything after the \<hr/\>\<h2\> tags to a string:
-    pageContents
+-   Search the HTML for and store the location of `<hr/><h2>`
+-   Save everything after the `<hr/><h2>` tags to a string: pageContents
 
-To achieve this, you will use the find string method and create a new
+To achieve this, you will use the `find` string method and create a new
 substring containing only the desired content using the index as start
 point for the substring.
 
@@ -179,7 +175,7 @@ print obo.stripTags(HTML)
 When you run `trial-content.py` it will get the web page for Bowsey’s
 trial transcript, then look in the `obo.py` module for the stripTags
 function. It will use that function to extract the stuff after the
-\<hr/\>\<h2\> tags. With any luck, this should be the textual content of
+`<hr/><h2>` tags. With any luck, this should be the textual content of
 the Bowsey transcript, along with some of HTML markup. Don’t worry if
 your Command Output screen ends in a thick black line. Komodo Edit’s
 output screen has a maximum number of characters it will display, after
@@ -207,7 +203,7 @@ have passed it any string, including one you input directly between the
 parentheses. Try rerunning `trial-content.py`, changing the stripTags
 argument to “I am quite fond of dogs” and see what happens. Note that
 depending on how you define your function (and what it does) your
-argument may need to be something other than a string: an integer for
+argument may need to be something other than a string: an *integer* for
 example.
 
 Suggested Reading

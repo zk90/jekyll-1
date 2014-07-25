@@ -1,8 +1,6 @@
 ---
 title: Output Data as an HTML File
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel & Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -15,7 +13,7 @@ This lesson takes the frequency pairs created in [Computing
 Frequencies][] and outputs them to an HTML file.
 
 Here you will learn how to output data as an HTML file using Python. You
-will also learn about string formatting. The final result is an HTML
+will also learn about *string formatting*. The final result is an HTML
 file that shows the keywords found in the original source in order of
 descending frequency, along with the number of times that each keyword
 appears.
@@ -33,10 +31,10 @@ In the previous lesson, you learned how to embed the message “Hello
 World!” in HTML tags, write the result to a file and open it
 automatically in the browser. A program that puts formatting codes
 around something so that it can be used by another program is sometimes
-called a wrapper. What we’re going to do now is develop an HTML wrapper
-for the output of our code that computes word frequencies. We’re also
-going to add some helpful, dynamic metadata to supplement the frequency
-data collected in [Computing Frequencies][].
+called a *wrapper*. What we’re going to do now is develop an HTML
+wrapper for the output of our code that computes word frequencies. We’re
+also going to add some helpful, dynamic metadata to supplement the
+frequency data collected in [Computing Frequencies][].
 
 ### Metadata
 
@@ -61,14 +59,14 @@ and keep track of metadata.
 
 When you’re working with digital data, it is a good idea to incorporate
 metadata into your own files whenever possible. We will now develop a
-few basic strategies for making our data files self-documenting. In our
-wrapper, we want to include dynamic information about the file, such as
-the time and date it was created, as well as an HTML title that is
+few basic strategies for making our data files *self-documenting*. In
+our wrapper, we want to include dynamic information about the file, such
+as the time and date it was created, as well as an HTML title that is
 relevant to the file. In this case we could just give it a name
 ourselves, but when we start working with multiple files, automatically
 creating self-documenting files will save a lot of time, so we’ll
 practice now. And for that, we’ll have to learn to take advantage of a
-few more powerful string formatting options.
+few more powerful *string formatting* options.
 
 ### Python string formatting
 
@@ -209,7 +207,7 @@ there.
 
 The function also calls the Python datetime library to determine the
 current time and date. Like the string formatting operator %s, this
-library uses the % as replacements for values. In this case, the %Y %m
+library uses the `%` as replacements for values. In this case, the %Y %m
 %d %H %M %S represents year, month, date, hour, minute and second
 respectively. Unlike the %s, the program will determine the value of
 these variables for you using your computer’s clock. It is important to
@@ -251,7 +249,7 @@ obo.wrapStringInHTML("html-to-freq-3", url, outstring)
 ```
 
 Note that we interspersed our word-frequency pairs with the HTML break
-tag \<br /\>, which acts as a newline. If all went well, you should see
+tag `<br />`, which acts as a newline. If all went well, you should see
 the same word frequencies that you computed in the last section, this
 time in your browser window.
 

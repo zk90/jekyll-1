@@ -1,8 +1,6 @@
 ---
 title: Mac Installation
-authors:
-- William J. Turkel
-- Adam Crymble
+author: William J. Turkel, Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford, Amanda Morton
 layout: default
@@ -36,7 +34,7 @@ drive.
 
 Download the latest version of [Beautiful Soup][] and copy it to the
 directory where you are going to put your own programs. Beautiful Soup
-is a library (a collection of prewritten code) that makes it easy for
+is a *library* (a collection of prewritten code) that makes it easy for
 Python programs to break web pages down into meaningful chunks that can
 be further processed.
 
@@ -91,19 +89,19 @@ create a program that says ‘hello world’ and terminates. We will show
 you how to do this in Python and HTML.
 
 Python is a good programming language for beginners because it is very
-high-level. It is possible, in other words, to write short programs that
-accomplish a lot. The shorter the program, the more likely it is for the
-whole thing to fit on one screen, and the easier it is to keep track of
-all of it in your mind.
+*high-level*. It is possible, in other words, to write short programs
+that accomplish a lot. The shorter the program, the more likely it is
+for the whole thing to fit on one screen, and the easier it is to keep
+track of all of it in your mind.
 
-The languages that we will be using are all interpreted. This means that
-there is a special computer program (known as an interpreter) that knows
-how to follow instructions written in that language. One way to use the
-interpreter is to store all of your instructions in a file, and then run
-the interpreter on the file. A file that contains programming language
-instructions is known as a program. The interpreter will execute each of
-the instructions that you gave it in your program and then stop. Let’s
-try this.
+The languages that we will be using are all *interpreted*. This means
+that there is a special computer program (known as an *interpreter*)
+that knows how to follow instructions written in that language. One way
+to use the interpreter is to store all of your instructions in a *file*,
+and then run the interpreter on the file. A file that contains
+programming language instructions is known as a *program*. The
+interpreter will execute each of the instructions that you gave it in
+your program and then stop. Let’s try this.
 
 In your text editor, create a new file, enter the following two-line
 program and save it to your `programming-historian` directory as
@@ -126,7 +124,7 @@ this:
 ### Interacting with a Python shell
 
 Another way to interact with an interpreter is to use what is known as a
-shell. You can type in a statement and press the Enter key, and the
+*shell*. You can type in a statement and press the Enter key, and the
 shell will respond to your command. Using a shell is a great way to test
 statements to make sure that they do what you think they should. This is
 done slightly differently on Mac, Linux and Windows.
