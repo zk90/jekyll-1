@@ -1,12 +1,15 @@
 ---
 title: Cleaning Data with OpenRefine
-author: Seth van Hooland, Ruben Verborgh, Max De Wilde
+authors:
+- Seth van Hooland
+- Ruben Verborgh
+- Max De Wilde
 date: 2013-08-05
 reviewers: Adam Crymble, Patrick Burns, Nora McGregor
 layout: default
 ---
 
-**Lesson goals**
+## Lesson goals
 
 Don’t take your data at face value. That is the key message of this
 tutorial which focuses on how scholars can diagnose and act upon the
@@ -24,7 +27,7 @@ on a collection of metadata from the [Powerhouse museum][],
 demonstrating how (semi-)automated methods can help you correct the
 errors in your data.
 
-**Why should historians care about data quality?**
+## Why should historians care about data quality?
 
 Duplicate records, empty values and inconsistent formats are phenomena
 we should be prepared to deal with when using historical data sets. This
@@ -37,14 +40,14 @@ as blank cells, duplicates, spelling inconsistencies, etc. `OpenRefine`
 not only allows you to quickly diagnose the accuracy of your data, but
 also to act upon certain errors in an automated manner.
 
-**Description of the tool: OpenRefine**
+## Description of the tool: OpenRefine
 
-****In the past, historians had to rely on information technology
+In the past, historians had to rely on information technology
 specialists to diagnose data quality and to run cleaning tasks. This
 required custom computer programs when working with sizeable data sets.
-Luckily, the advent of *Interactive Data Transformation* tools (IDTs)
-now allows for rapid and inexpensive operations on large amounts of
-data, even by professionals lacking in-depth technical skills.
+Luckily, the advent of Interactive Data Transformation tools (IDTs) now
+allows for rapid and inexpensive operations on large amounts of data,
+even by professionals lacking in-depth technical skills.
 
 IDTs resemble the desktop spreadsheet software we are all familiar with,
 and they share some common functionalities. You can for example use an
@@ -65,20 +68,20 @@ been developed in recent years, such as [`Potter’s Wheel ABC`][] and
 the authors, it is the most user-friendly tool to efficiently process
 and clean large amounts of data in a browser-based interface.
 
-On top of [*data profiling*][] and cleaning operations, `OpenRefine`
+On top of [data profiling][] and cleaning operations, `OpenRefine`
 extensions allow users to identify concepts in unstructured text, a
-process referred to as [*named-entity recognition*][] (NER), and can
-also reconcile their own data with existing knowledge bases. By doing
-so, `OpenRefine` can be a practical tool to link data with concepts and
+process referred to as [named-entity recognition][] (NER), and can also
+reconcile their own data with existing knowledge bases. By doing so,
+`OpenRefine` can be a practical tool to link data with concepts and
 authorities which have already been declared on the Web by parties such
 as [Library of Congress][] or [OCLC][]. Data cleaning is a prerequisite
 to these steps; the success rate of NER and a fruitful matching process
 between your data and external authorities depends on your ability to
 make your data as coherent as possible.
 
-**Description of the exercise: Powerhouse Museum**
+## Description of the exercise: Powerhouse Museum
 
-****The Powerhouse Museum in Sydney provides a freely available metadata
+The Powerhouse Museum in Sydney provides a freely available metadata
 export of its collection on its [website][]. The museum is one of the
 largest science and technology museums worldwide, providing access to
 almost 90,000 objects, ranging from steam engines to fine glassware and
@@ -103,8 +106,8 @@ manner the strengths of the collection. In the collection you will find
 better representations of social history and decorative arts, and
 comparably few object names relating to fine arts and natural history.
 
-The terms in the Categories field comprise what we call a [*Controlled
-vocabulary*][]. A controlled vocabulary consists of keywords describing
+The terms in the Categories field comprise what we call a [Controlled
+vocabulary][]. A controlled vocabulary consists of keywords describing
 the content of a collection using a limited number of terms, and is
 often a key entry point into data sets used by historians in libraries,
 archives and museums. That is why we will give particular attention to
@@ -113,7 +116,7 @@ possible to reuse the terms in the controlled vocabulary to find
 additional information about the terms elsewhere online, which is known
 as creating [Linked Data][].
 
-**Getting started: installing OpenRefine and importing data**
+### Getting started: installing OpenRefine and importing data
 
 [Download OpenRefine][] and follow the installation instructions.
 OpenRefine works on all platforms: Windows, Mac, and Linux. `OpenRefine`
@@ -144,11 +147,11 @@ open.
 
 Figure 1: Screenshot of a Sample Object on the Powerhouse Museum Website
 
-**Get to know your data**
+### Get to know your data
 
 The first thing to do is to look around and get to know your data. You
-can inspect the different data values by displaying them in *facets*.
-You could consider a [facet][] like a lense through which you view a
+can inspect the different data values by displaying them in facets. You
+could consider a [facet][] like a lense through which you view a
 specific subset of the data, based on a criterion of your choice. Click
 the triangle in front of the column name, select Facet, and create a
 facet. For instance, try a ‘Text’ facet or a ‘Numeric’ facet, depending
@@ -163,7 +166,7 @@ blank, for instance, comes handy to find out how many values were filled
 in for each field. We’ll explore these further in the following
 exercises.
 
-**Remove blank rows**
+### Remove blank rows
 
 One thing you notice when creating a numeric facet for the Record ID
 column, is that three rows are empty. You can find them by unselecting
@@ -175,7 +178,7 @@ click the triangle in front of the first column called ‘All’, select
 ‘Edit rows’, and then ‘Remove all matching rows’. Close the numeric
 facet to see the remaining 75,811 rows.
 
-**Removing duplicates**
+### Removing duplicates
 
 A second step is to detect and remove duplicates. These can be spotted
 by sorting them by a unique value, such as the Record ID (in this case
@@ -206,7 +209,7 @@ values, indicating that the entire row represents a duplicate. This is
 not necessarily the case, and great caution should be taken to manually
 verify wether the entire row represents a duplicate or not.
 
-**Atomization**
+### Atomization
 
 Once the duplicate records have been removed, we can have a closer look
 at the *Categories* field. On average each object has been attributed
@@ -232,7 +235,7 @@ over 75,736 collection items (records). You maybe noticed that we are 9
 records up from the original 75,727, but don’t worry about that for the
 time being, we will come back to this small difference later.
 
-**Facetting and clustering**
+### Facetting and clustering
 
 Once the content of a field has been properly atomized, filters, facets,
 and clusters can be applied to give a quick and straightforward overview
@@ -270,8 +273,7 @@ cells, Join multi-valued cells, OK. Choose the pipe character as a
 separator. The rows now look like before, with a multi-valued Categories
 field.
 
-**Applying ad-hoc transformations through the use of regular
-expressions**
+### Applying ad-hoc transformations through the use of regular expressions
 
 You may remember there was an increase in the number of records after
 the splitting process: nine records appeared out of nowhere. In order to
@@ -340,7 +342,7 @@ value.split('|').uniques().join('|')
 You will notice that 32,599 cells are affected, more than half the
 collection.
 
-**Exporting your cleaned data**
+### Exporting your cleaned data
 
 Since you first loaded your data into `OpenRefine`, all cleaning
 operations have been performed in the software memory, leaving your
@@ -352,7 +354,7 @@ or add your own export template by clicking ‘Templating’. You can also
 export your project in the internal `OpenRefine` format in order to
 share it with others.
 
-**Building on top of your cleaned data**
+### Building on top of your cleaned data
 
 Once your data has been cleaned, you can take the next step and explore
 other exciting features of `OpenRefine`. The user community of
@@ -362,7 +364,7 @@ the Web. The [RDF Refine extension][] transforms plaintext keywords into
 URLs. The [NER extension][] allows you to apply named-entity recognition
 (NER), which identifies keywords in flowing text and gives them a URL.
 
-**Conclusions**
+## Conclusions
 
 If you only remember on thing from this lesson, it should be this: *all
 data is dirty, but you can do something about it.* As we have shown
@@ -383,15 +385,15 @@ the case you have made an error.
   [`Potter’s Wheel ABC`]: http://control.cs.berkeley.edu/abc/
     "Potter's Wheel ABC "
   [`Wrangler`]: http://vis.stanford.edu/papers/wrangler/ "Wrangler"
-  [*data profiling*]: http://en.wikipedia.org/wiki/Data_profiling
-  [*named-entity recognition*]: http://en.wikipedia.org/wiki/Named-entity_recognition
+  [data profiling]: http://en.wikipedia.org/wiki/Data_profiling
+  [named-entity recognition]: http://en.wikipedia.org/wiki/Named-entity_recognition
   [Library of Congress]: http://www.loc.gov/index.html
     "Library of Congress"
   [OCLC]: http://www.oclc.org/home.en.html "OCLC"
   [website]: http://www.powerhousemuseum.com/collection/database/download.php
     "website"
   [Creative Commons Attribution Share Alike (CCASA) license]: http://creativecommons.org/licenses/by-nc/2.5/au/
-  [*Controlled vocabulary*]: http://en.wikipedia.org/wiki/Controlled_vocabulary
+  [Controlled vocabulary]: http://en.wikipedia.org/wiki/Controlled_vocabulary
   [Linked Data]: http://en.wikipedia.org/wiki/Linked_data
   [Download OpenRefine]: http://openrefine.org/#download_openrefine
   [FreeYourMetadata website]: http://data.freeyourmetadata.org/powerhouse-museum/

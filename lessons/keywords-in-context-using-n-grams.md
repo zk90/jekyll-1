@@ -1,6 +1,8 @@
 ---
 title: Keywords in Context (Using n-grams)
-author: William J. Turkel & Adam Crymble
+authors:
+- William J. Turkel
+- Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -11,8 +13,8 @@ Lesson Goals
 
 Like in [Output Data as HTML File][], this lesson takes the frequency
 pairs collected in [Counting Frequencies][] and outputs them in HTML.
-This time the focus is on *keywords in context (KWIC)* which creates
-*n-grams* from the original document content – in this case a trial
+This time the focus is on keywords in context (KWIC) which creates
+n-grams from the original document content – in this case a trial
 transcript from the *Old Bailey Online*. You can use your program to
 select a keyword and the computer will output all instances of that
 keyword, along with the words to the left and right of it, making it
@@ -44,13 +46,13 @@ dictionaries for text processing, there are many other things that you
 can do with the text besides counting frequencies. People who study the
 statistical properties of language have found that studying linear
 sequences of linguistic units can tell us a lot about a text. These
-linear sequences are known as *bigrams* (2 units), *trigrams* (3 units),
-or more generally as *n-grams*.
+linear sequences are known as bigrams (2 units), trigrams (3 units), or
+more generally as n-grams.
 
 You have probably seen n-grams many times before. They are commonly used
 on search results pages to give you a preview of where your keyword
 appears in a document and what the surrounding context of the keyword
-is. This application of n-grams is known as *keywords in context* (often
+is. This application of n-grams is known as keywords in context (often
 abbreviated as KWIC). For example, if the string in question were “it
 was the best of times it was the worst of times it was the age of wisdom
 it was the age of foolishness” then a 7-gram for the keyword “wisdom”
@@ -76,8 +78,8 @@ that it can be viewed in Firefox and added easily to Zotero.
 Since we want to work with words as opposed to characters or phonemes,
 it will be much easier to create n-grams using a list of words rather
 than strings. As you already know, Python can easily turn a string into
-a list using the `split` operation. Once `split` it becomes simple to
-retrieve a subsequence of adjacent words in the list by using a `slice`,
+a list using the split operation. Once split it becomes simple to
+retrieve a subsequence of adjacent words in the list by using a slice,
 represented as two indexes separated by a colon. This was introduced
 when working with strings in [Manipulating Strings in Python][].
 
@@ -116,8 +118,8 @@ print wordlist[12:]
 -> ['it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness']
 ```
 
-In these examples we have used the `slice` method to return parts of our
-list. Note that there are two sides to the colon in a `slice`. If the
+In these examples we have used the slice method to return parts of our
+list. Note that there are two sides to the colon in a slice. If the
 right of the colon is left blank as in the last example above, the
 program knows to automatically continue to the end – in this case, to
 the end of the list. The second last example above shows that we can
@@ -125,7 +127,7 @@ start at the beginning by leaving the space before the colon empty. This
 is a handy shortcut available to keep your code shorter.
 
 You can also use variables to represent the index positions. Used in
-conjunction with a `for` loop, you could easily create every possible
+conjunction with a for loop, you could easily create every possible
 n-gram of your list. The following example returns all 5-grams of our
 string from the example above.
 
@@ -215,7 +217,7 @@ There are two concepts that we see in this example of which you need to
 be aware. Firstly, because our function expects a list of words rather
 than a string, we have to convert the strings into lists before our
 function can handle them. We could have done this by adding another line
-of code above the function call, but instead we used the `split` method
+of code above the function call, but instead we used the split method
 directly in the function argument as a bit of a shortcut.
 
 Secondly, why did the first example return an empty list rather than the

@@ -1,6 +1,7 @@
 ---
 title: Data Mining the Internet Archive Collection
-author: Caleb McDaniel
+authors:
+- Caleb McDaniel
 date: 2014-03-03
 reviewers: William J Turkel
 layout: default
@@ -164,7 +165,7 @@ collection id in the second command:
 search = internetarchive.Search('collection:bplscas')
 ```
 
-After hitting enter on the `print` command, you should see a number that
+After hitting enter on the print command, you should see a number that
 matches the number of results you [saw when doing the advanced search
 for the collection in the browser][].
 
@@ -177,7 +178,7 @@ sample code for downloading an item][], modifying it in order to get the
 Douglass letter we discussed earlier.
 
 If you are still at your Python interpreter’s command prompt, you don’t
-need to *import internetarchive* again, so instead just enter the second
+need to import internetarchive again, so instead just enter the second
 and third lines from the sample code, followed each time by enter, but
 changing the sample identifier stairs to our item identifier,
 lettertowilliaml00doug (note that the character before the two zeroes is
@@ -254,7 +255,7 @@ for result in search.results():
 
 Note that after entering the first line, your Python interpreter will
 automatically print the ellipsis on line two. This is because you have
-started a *for loop*, and Python is expecting there to be more. It wants
+started a for loop, and Python is expecting there to be more. It wants
 to know what you want to do for each result in the search. That’s also
 why, once you hit enter on the second line, you’ll see a third line with
 another ellipsis, because Python doesn’t know whether you are finished
@@ -268,7 +269,7 @@ keyboard, which will return you to the prompt.
 
 If you didn’t see identifiers printing out to your screen, but instead
 saw an error like this, you may have forgotten to enter a few spaces
-before your `print command:`
+before your print command:
 
 ``` python
 for result in search.results():
@@ -280,23 +281,23 @@ IndentationError: expected an indented block
 ```
 
 Remember that whitespace matters in Python, and you need to indent the
-lines in a `for loop` so that Python can tell which command(s) to
-perform on each item in the loop.
+lines in a for loop so that Python can tell which command(s) to perform
+on each item in the loop.
 
 Understanding the for loop
 --------------------------
 
-The `for loop`, expressed in plain English, tells Python to do something
+The for loop, expressed in plain English, tells Python to do something
 to each thing in a collection of things. In the above case, we printed
 the identifier for each result in the results of our collection search.
-Two additional points about the `for loop`:
+Two additional points about the for loop:
 
-First, the word we used after `for` is what’s called a *local variable*
-in Python. It serves as a placeholder for whatever instance or item we
-are going to be working with inside the loop. Usually it makes sense to
-pick a name that describes what kind of thing we are working with—in
-this case, a search result—but we could have used other names in place
-of that one. For example, try running the above for loop again, but
+First, the word we used after for is what’s called a local variable in
+Python. It serves as a placeholder for whatever instance or item we are
+going to be working with inside the loop. Usually it makes sense to pick
+a name that describes what kind of thing we are working with—in this
+case, a search result—but we could have used other names in place of
+that one. For example, try running the above for loop again, but
 substitute a different name for the local variable, such as:
 
 ``` python
@@ -305,11 +306,11 @@ for item in search.results():
 ```
 
 You should get the same results. Notice that we did not replace
-*search.results()* with *search.items()*. That’s because that instance
-of the word result is not a local variable, but a function ([remember
+search.results() with search.items(). That’s because that instance of
+the word result is not a local variable, but a function ([remember
 those?][]) defined in the internetarchive module.
 
-The second thing to note about the `for loop` is that the indented block
+The second thing to note about the for loop is that the indented block
 could could have contained other commands. In this case, we printed each
 individual search result’s identifier. But we could have chosen to do,
 for each result, anything that we could do to an individual Internet
@@ -318,7 +319,7 @@ Archive item.
 For example, earlier we downloaded all the files associated with the
 item lettertowilliaml00doug. We could have done that to each item
 returned by our search by changing the line `print result['identifier']`
-in our `for loop` to `result.download()`.
+in our for loop to `result.download()`.
 
 We probably want to think twice before doing that, though—downloading
 all the files for each of the 7,029 items in the bplscas collection is a
@@ -374,7 +375,7 @@ you want those MARC records to be stored and place the above script in
 that directory. Then run the script from within the directory so that
 the files will be downloaded in an easy-to-find place.
 
-(Note that if you receive what looks like a *ConnectionError* on your
+(Note that if you receive what looks like a ConnectionError on your
 first attempt, check your Internet connection, wait a few minutes, and
 then try running the script again.)
 
@@ -403,7 +404,7 @@ In those and other error cases, Python will raise an “exception” telling
 you what the problem is. Unfortunately, an exception will also crash
 your script instead of continuing on to the next item.
 
-To prevent this, we can use what’s called a `try` statement in Python,
+To prevent this, we can use what’s called a try statement in Python,
 which does exactly what it sounds like. The statement will try to
 execute a certain snippet of code until it hits an exception, in which
 case you can give it some other code to execute instead. You can read
@@ -437,13 +438,13 @@ for result in search.results():
 The main thing we’ve added here, after our module import statements, is
 a line that opens a text file called `bpl-marcs-errors.log` and prepares
 it to have text appended to it. We are going to use this file to log
-exceptions that the script raises. The `try statement` that we have
-added to our `for loop` will attempt to download the MARC record. If it
-can’t, it will write a descriptive statement about what went wrong to
-our log file. That way we can go back to the file later and identify
-which items we will need to try to download again. If the try clause
-succeeds and can download the record, then the script will execute the
-code in the `else clause`.
+exceptions that the script raises. The try statement that we have added
+to our for loop will attempt to download the MARC record. If it can’t,
+it will write a descriptive statement about what went wrong to our log
+file. That way we can go back to the file later and identify which items
+we will need to try to download again. If the try clause succeeds and
+can download the record, then the script will execute the code in the
+else clause.
 
 One other thing we have added, upon successful download, is this line:
 
@@ -579,7 +580,7 @@ for file in os.listdir(path):
 ```
 
 This script modifies our above code in several ways. First, it uses a
-`for loop` to iterate over each file in our directory. In place of the
+for loop to iterate over each file in our directory. In place of the
 `internetarchive` search results that we iterated over in our first part
 of this lesson, we iterate over the files returned by os.listdir(path)
 which uses the built-in Python module os to list the contents of the
@@ -590,9 +591,9 @@ MARC files.
 We have also added some error handling to our get\_place\_of\_pub()
 function to account for the fact that some records may (for whatever
 reason) not contain the information we are looking for. The function
-will `try` to print the place of publication, but if this raises an
+will try to print the place of publication, but if this raises an
 Exception, it will print out the information returned by the Exception
-instead. In this case, if the `try statement` failed, the exception will
+instead. In this case, if the try statement failed, the exception will
 probably print None. Understanding why is a subject for another lesson
 on Python Type errors, but for now the None printout is descriptive
 enough of what happened, so it could be useful to us.

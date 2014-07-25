@@ -1,6 +1,8 @@
 ---
 title: Getting Started with Online Sources
-author: William J. Turkel and Adam Crymble
+authors:
+- William J. Turkel
+- Adam Crymble
 date: 2013-05-27
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -78,9 +80,9 @@ Mac Instructions
 
     Download the latest version of [Beautiful Soup][Beautiful Soup
     HTML/XML parser] and copy it to the directory where you are going to
-    put your own programs. Beautiful Soup is a *library* (a collection
-    of prewritten code) that makes it easy for Python programs to break
-    web pages down into meaningful chunks that can be further processed.
+    put your own programs. Beautiful Soup is a library (a collection of
+    prewritten code) that makes it easy for Python programs to break web
+    pages down into meaningful chunks that can be further processed.
 
 -   ##### Install Komodo Edit
 
@@ -148,9 +150,9 @@ Windows Instructions
 
     Download the latest version of [Beautiful Soup][Beautiful Soup
     HTML/XML parser] and copy it to the directory where you are going to
-    put your own programs. Beautiful Soup is a *library* (a collection
-    of prewritten code) that makes it easy for Python programs to break
-    web pages down into meaningful chunks that can be further processed.
+    put your own programs. Beautiful Soup is a library (a collection of
+    prewritten code) that makes it easy for Python programs to break web
+    pages down into meaningful chunks that can be further processed.
 
 -   ##### Install Komodo Edit
 
@@ -214,8 +216,7 @@ Linux Instructions
 
 Thanks to John Fink for providing the basis of this section. These
 instructions are for Ubuntu 12.04 LTS, but should work for any apt based
-system such as Debian, or Linux Mint, provided you have `sudo`
-installed.
+system such as Debian, or Linux Mint, provided you have sudo installed.
 
 -   Back up your computer
 -   ##### Install Python v. 2 and Python “Beautiful Soup” module
@@ -267,19 +268,19 @@ create a program that says “hello world” and terminates. We will show
 you how to do this in Python and HTML.
 
 Python is a good programming language for beginners because it is very
-*high-level*. It is possible, in other words, to write short programs
-that accomplish a lot. The shorter the program, the more likely it is
-for the whole thing to fit on one screen, and the easier it is to keep
-track of all of it in your mind.
+high-level. It is possible, in other words, to write short programs that
+accomplish a lot. The shorter the program, the more likely it is for the
+whole thing to fit on one screen, and the easier it is to keep track of
+all of it in your mind.
 
-The languages that we will be using are all *interpreted*. This means
-that there is a special computer program (known as an *interpreter*)
-that knows how to follow instructions written in that language. One way
-to use the interpreter is to store all of your instructions in a *file*,
-and then run the interpreter on the file. A file that contains
-programming language instructions is known as a *program*. The
-interpreter will execute each of the instructions that you gave it in
-your program and then stop. Let’s try this.
+The languages that we will be using are all interpreted. This means that
+there is a special computer program (known as an interpreter) that knows
+how to follow instructions written in that language. One way to use the
+interpreter is to store all of your instructions in a file, and then run
+the interpreter on the file. A file that contains programming language
+instructions is known as a program. The interpreter will execute each of
+the instructions that you gave it in your program and then stop. Let’s
+try this.
 
 In Komodo, create a new file, enter the following two-line program and
 save it to your `programming-historian` directory as `hello-world.py`
@@ -305,7 +306,7 @@ can open it in the menu: `View-> Tabs & Sidebars -> Command Output`.
 ### Interacting with a Python shell
 
 Another way to interact with an interpreter is to use what is known as a
-*shell*. You can type in a statement and press the Enter key, and the
+shell. You can type in a statement and press the Enter key, and the
 shell will respond to your command. Using a shell is a great way to test
 statements to make sure that they do what you think they should. This is
 done slightly differently on Mac, Linux and Windows.
@@ -385,12 +386,12 @@ Step 4 – “Hello World” in HTML
 ### Viewing HTML files
 
 When you are working with online sources, much of the time you will be
-using files that have been marked up with HTML (*Hyper Text Markup
-Language*). Your browser already knows how to interpret HTML, which is
-handy for human readers. Most browsers also let you see the *HTML
-source* for any page that you visit. The two images below show a typical
-web page (from the Old Bailey Online) and the HTML source used to
-generate that page, which you can see with the
+using files that have been marked up with HTML (Hyper Text Markup
+Language). Your browser already knows how to interpret HTML, which is
+handy for human readers. Most browsers also let you see the HTML source
+for any page that you visit. The two images below show a typical web
+page (from the Old Bailey Online) and the HTML source used to generate
+that page, which you can see with the
 `Tools -> Web Developer -> Page Source` command in Firefox.
 
 When you’re working in the browser, you typically don’t want or need to
@@ -416,11 +417,11 @@ historian or digital humanist.)
 
 ### “Hello World” in HTML
 
-HTML is what is known as a “*markup*” language. In other words, HTML is
-text that has been “marked up” with *tags* that provide information for
+HTML is what is known as a “markup” language. In other words, HTML is
+text that has been “marked up” with tags that provide information for
 the interpreter (which is often a web browser). Suppose you are
 formatting a bibliographic entry and you want to indicate the title of a
-work by italicizing it. In HTML you use `<em>` tags (“em” stands for
+work by italicizing it. In HTML you use \<em\> tags (“em” stands for
 emphasis). So part of your HTML file might look like this
 
 ``` xml
@@ -428,10 +429,10 @@ emphasis). So part of your HTML file might look like this
 ```
 
 The simplest HTML file consists of tags which indicate the beginning and
-end of the whole document, and tags which identify a `head` and a `body`
+end of the whole document, and tags which identify a head and a body
 within that document. Information about the file usually goes into the
-`head`, whereas information that will be displayed on the screen usually
-goes into the `body`.
+head, whereas information that will be displayed on the screen usually
+goes into the body.
 
 ``` xml
 <html>
@@ -442,11 +443,11 @@ goes into the `body`.
 
 You can try creating some HTML code. Go to Komodo, and choose
 `File -> New`. Copy the code below into the editor. The first line tells
-the browser what kind of file it is. The `html` tag has the text
-direction set to `ltr` (left to right) and the `lang` (language) set to
-US English. The `title` tag in the `head` of the HTML document contains
-material that is usually displayed in the top bar of a window when the
-page is being viewed, and in Firefox tabs.
+the browser what kind of file it is. The html tag has the text direction
+set to ltr (left to right) and the lang (language) set to US English.
+The title tag in the head of the HTML document contains material that is
+usually displayed in the top bar of a window when the page is being
+viewed, and in Firefox tabs.
 
 ``` xml
 <!doctype html>

@@ -1,6 +1,7 @@
 ---
 title: Automated Downloading with Wget
-author: Ian Milligan
+authors:
+- Ian Milligan
 date: 2012-06-27
 reviewers: Aurélien Berra, Adam Crymble
 layout: default
@@ -19,8 +20,8 @@ Lesson Goals
 This is a lesson designed for intermediate users, although beginner
 users should be able to follow along.
 
-*Wget* is a useful program, run through your computer’s command
-line, for retrieving online material.
+Wget is a useful program, run through your computer’s command line, for
+retrieving online material.
 
 ![][]
 
@@ -28,7 +29,7 @@ The Mac Command Line, “Terminal”
 
 It can be useful in the following situations:
 
--   Retrieving or *mirroring* (creating an exact copy of) an entire
+-   Retrieving or mirroring (creating an exact copy of) an entire
     website. This website might contain historical documents, or it may
     simply be your own personal website that you want to back up. One
     command can download the entire site onto your computer.
@@ -187,7 +188,7 @@ again to install xcode and the Command Line Tools set.
 Then you can subsequently download an uncompiled version of wget from
 the [GNU website][] (I chose to download the file ‘wget-1.13.tar.gz’,
 which you can find by following the link to either the [HTTP][] or
-[FTP][] download pages), *unzip* it (by double-clicking on it) into your
+[FTP][] download pages), unzip it (by double-clicking on it) into your
 home directory (on a Mac, this will be your `/user/` directory – for
 example, my user name is ianmilligan and it appears next to a house icon
 in my Finder), and then open up Terminal. For this tutorial, we have
@@ -204,7 +205,7 @@ Note that if you have downloaded a different version of wget, the
 following steps will work but you may have to replace the above version
 number (i.e. `1.13`) with your own.
 
-We now need to generate the instructions, or *makefile*, for the file.
+We now need to generate the instructions, or makefile, for the file.
 This is sort of a blueprint for what the final file is going to look
 like. Accordingly, type:
 
@@ -219,9 +220,9 @@ them. Type:
 make
 ```
 
-Then, you need to make the final file. By pre-pending the command
-*sudo*, you are running the command with highest security privileges.
-This lets you actually install the file into your system.
+Then, you need to make the final file. By pre-pending the command sudo,
+you are running the command with highest security privileges. This lets
+you actually install the file into your system.
 
 ``` bash
 sudo make install
@@ -328,38 +329,38 @@ wget [options] [URL]
 We have just learned about the [URL] component in the previous example,
 as it tells the program where to go. Options, however, give the program
 a bit more information about what exactly we want to do. The program
-knows that an option is an option by the presence of a `dash` before the
+knows that an option is an option by the presence of a dash before the
 variable. This lets it know the difference between the URL and the
 options. So let’s learn a few commands now:
 
     -r
 
-*Recursive retrieval* is the most important part of wget. What this
-means is that the program begins following links from the website and
+Recursive retrieval is the most important part of wget. What this means
+is that the program begins following links from the website and
 downloading them too. So for example, the
 <http://activehistory.ca/papers/> has a link to
 <http://activehistory.ca/papers/historypaper-9/>, so it will download
 that too if we use recursive retrieval. However, it will also follow any
 other links: if there was a link to <http://uwo.ca> somewhere on that
-page, it would follow that and download it as well. By default, -`r`
-sends wget to a *depth* of five sites after the first one. This is
-following links, to a limit of five clicks after the first website. At
-this point, it will be quite indiscriminate. So we need more commands:
+page, it would follow that and download it as well. By default, -r sends
+wget to a depth of five sites after the first one. This is following
+links, to a limit of five clicks after the first website. At this point,
+it will be quite indiscriminate. So we need more commands:
 
 ``` bash
 --no-parent 
 ```
 
 (The double-dash indicates the full-text of a command. All commands also
-have a short version, this could be initiated using -`np`).
+have a short version, this could be initiated using -np).
 
 This is an important one. What this means is that wget should follow
-links, but not beyond the last *parent directory*. In our case, that
-means that it won’t go anywhere that is not part of the
+links, but not beyond the last parent directory. In our case, that means
+that it won’t go anywhere that is not part of the
 http://activehistory.ca/papers/ hierarchy. If it was a long path such as
 http://niche-canada.org/projects/events/new-events/not-yet-happened-events/,
 it would only find files in the `/not-yet-happened-events/` folder. It
-is a critical command for *delineating* your search.
+is a critical command for delineating your search.
 
 Here is a graphical representation:
 
@@ -396,7 +397,7 @@ occasions, you may come across a site that blocks automated downloading
 altogether. The website’s terms of service, which you should consult,
 may not mention a policy on automated downloading, but steps to prohibit
 it may be built into their website’s architecture nonetheless. In such
-rare cases, you can use the command `––random-wait` which will vary the
+rare cases, you can use the command ––random-wait which will vary the
 wait by 0.5 and 1.5 times the value you provide here.
 
 Another critical comment is to limit the bandwidth you will be using in
@@ -432,12 +433,11 @@ directory labeled `ActiveHistory.ca` that contains the `/papers/`
 sub-directory – perfectly mirrored on your system. This directory will
 appear in the location that you ran the command from in your command
 line, so likely is in your `USER` directory. Links will be replaced with
-*internal links* to the other pages you’ve downloaded, so you can
-actually have a fully working ActiveHistory.ca site on your computer.
-This lets you start to play with it without worrying about your internet
-speed.
+internal links to the other pages you’ve downloaded, so you can actually
+have a fully working ActiveHistory.ca site on your computer. This lets
+you start to play with it without worrying about your internet speed.
 
-To see if the download was a success, you will also have a *log* in your
+To see if the download was a success, you will also have a log in your
 command screen. Take a look over it to make sure that all files were
 downloaded successfully. If it did not download, it will let you know
 that it failed.
@@ -449,9 +449,9 @@ wget.
 
 This command means ‘mirror,’ and is especially useful for backing up an
 entire website. It introduces the following set of commands:
-*time-stamping*, which looks at the date of the site and doesn’t replace
+time-stamping, which looks at the date of the site and doesn’t replace
 it if you already have that version on your system (useful for repeated
-downloads), as well as *infinite recursion* (it will go as many layers
+downloads), as well as infinite recursion (it will go as many layers
 into the site as necessary). The command for mirroring ActiveHistory.ca
 would be:
 

@@ -1,6 +1,8 @@
 ---
 title: From HTML to List of Words (part 2)
-author: William J. Turkel & Adam Crymble
+authors:
+- William J. Turkel
+- Adam Crymble
 date: 2012-07-17
 reviewers: Miriam Posner, Jim Clifford
 layout: default
@@ -12,7 +14,7 @@ Lesson Goals
 In this lesson, you will learn the Python commands needed to implement
 the second part of the algorithm begun in the [From HTML to a List of
 Words (part 1)][]. The first half of the algorithm gets the content of
-an HTML page and saves only the content that follows the `<hr/><h2>`
+an HTML page and saves only the content that follows the \<hr/\>\<h2\>
 tags. The second half of the algorithm does the following:
 
 -   Look at every character in the pageContents string, one character at
@@ -22,7 +24,7 @@ tags. The second half of the algorithm does the following:
 -   If the character is a right angle bracket (\>) we are now leaving
     the tag; ignore the current character, but look at each following
     character
--   If we’re not inside a tag, `append` the current character to a new
+-   If we’re not inside a tag, append the current character to a new
     variable: text
 -   Split the text string into a list of individual words that can later
     be manipulated further.
@@ -46,16 +48,16 @@ for repeating tasks and for testing conditions.
 
 ### Looping
 
-Like many programming languages, Python includes a number of *looping*
-mechanisms. The one that you want to use in this case is called a *for
-loop*. The version below tells the interpreter to do something for each
+Like many programming languages, Python includes a number of looping
+mechanisms. The one that you want to use in this case is called a for
+loop. The version below tells the interpreter to do something for each
 character in a string named pageContents. The variable char will contain
 each character from pageContents in succession. We gave char its name;
 it does not have any special significance and could have been named
 jingles or k if we had felt so inclined. You can use the colour-coding
 in Komodo Edit as a guideline for deciding if a word is a variable with
 a user-given name (such as “char“) or a Python-defined name that serves
-a specific purpose (such as “`for`“). It is usually a good idea to give
+a specific purpose (such as “for“). It is usually a good idea to give
 variables names that provide information about what they contain. This
 will make it much easier to understand a program that you haven’t looked
 at for a while. With this in mind, “jingles” is probably not a very good
@@ -70,16 +72,16 @@ for char in pageContents:
 
 Next you need a way of testing the contents of a string, and choosing a
 course of action based on that test. Again, like many programming
-languages, Python includes a number of *branching* mechanisms. The one
-that you want to use here is called an *if statement*. The version below
+languages, Python includes a number of branching mechanisms. The one
+that you want to use here is called an if statement. The version below
 tests to see whether the string named char consists of a left angle
 bracket. As we mentioned earlier, indentation is important in Python. If
 code is indented, Python will execute it when the condition is true.
 
-Note that Python uses a single equals sign (`=`) for *assignment*, that
-is for setting one thing equal to something else. In order to test for
-*equality*, use double equals signs (`==`) instead. Beginning
-programmers often confuse the two.
+Note that Python uses a single equals sign (=) for assignment, that is
+for setting one thing equal to something else. In order to test for
+equality, use double equals signs (==) instead. Beginning programmers
+often confuse the two.
 
 ``` python
 if char == '<':
@@ -97,7 +99,7 @@ else:
 ```
 
 In Python you have the option of doing further tests after the first
-one, by using an *elif statement* (which is shorthand for else if).
+one, by using an elif statement (which is shorthand for else if).
 
 ``` python
 if char == '<':
@@ -120,7 +122,7 @@ removing all HTML tags. In this part of the algorithm we want to:
     tag so ignore the character
 -   If the character is a right angle bracket (\>) we are now leaving
     the tag; ignore the character
--   If we’re not inside a tag, `append` the current character to a new
+-   If we’re not inside a tag, append the current character to a new
     variable: text
 
 To do this, you will use a for loop to look at each successive character
@@ -165,20 +167,19 @@ def stripTags(pageContents):
     return text
 ```
 
-There are two new Python concepts in this new code: *continue* and
-*return*.
+There are two new Python concepts in this new code: continue and return.
 
 The Python continue statement tells the interpreter to jump back to the
 top of the enclosing loop. So if we are processing characters inside of
 a pair of angle brackets, we want to go get the next character in the
 pageContents string without adding anything to our text variable.
 
-In our previous examples we have used `print` extensively. This outputs
+In our previous examples we have used print extensively. This outputs
 the result of our program to the screen for the user to read. Often,
 however, we wish to allow one part of the program to send information to
-another part. When a function finishes executing, it can `return` a
-value to the code which called it. If we were to call stripTags using
-another program, we would do so like this:
+another part. When a function finishes executing, it can return a value
+to the code which called it. If we were to call stripTags using another
+program, we would do so like this:
 
 ``` python
 #understanding the Return statement
@@ -190,13 +191,13 @@ myText = "This is my <h1>HTML</h1> message"
 theResult = obo.stripTags(myText)
 ```
 
-By using `return`, we have been able to save the output of the stripTags
+By using return, we have been able to save the output of the stripTags
 function directly into a variable, which we can then resume processing
 as needed using additional code.
 
 Note that in the stripTags example from the start of this sub-section,
-the value that we want to `return` now is not pageContents, but rather
-the content which has had the HTML markup stripped out.
+the value that we want to return now is not pageContents, but rather the
+content which has had the HTML markup stripped out.
 
 To test our new stripTags routine, you can run `trial-content.py` again.
 Since we’ve redefined stripTags, the `trial-content.py` program now does
@@ -229,14 +230,14 @@ f.write('hello world')
 f.close()
 ```
 
-One of the most useful [*types*][] of object that Python provides,
-however, is the *list*, an ordered collection of other objects
-(including, potentially, other lists). Converting a string into a list
-of characters or words is straightforward. Type or copy the following
-program into your text editor to see two ways of achieving this. Save
-the file as `string-to-list.py` and execute it. Compare the two lists
-that are printed to the Command Output pane and see if you can figure
-out how the code works.
+One of the most useful [types][] of object that Python provides,
+however, is the list, an ordered collection of other objects (including,
+potentially, other lists). Converting a string into a list of characters
+or words is straightforward. Type or copy the following program into
+your text editor to see two ways of achieving this. Save the file as
+`string-to-list.py` and execute it. Compare the two lists that are
+printed to the Command Output pane and see if you can figure out how the
+code works.
 
 ``` python
 # string-to-list.py
@@ -257,11 +258,11 @@ print wordlist
 ```
 
 The first routine uses a for loop to step through each character in the
-string s1, and `appends` the character to the end of charlist. The
-second routine makes use of the `split` operation to break the string s2
-apart wherever there is whitespace (spaces, tabs, carriage returns and
-similar characters). Actually, it is a bit of a simplification to refer
-to the objects in the second list as words. Try changing s2 in the above
+string s1, and appends the character to the end of charlist. The second
+routine makes use of the split operation to break the string s2 apart
+wherever there is whitespace (spaces, tabs, carriage returns and similar
+characters). Actually, it is a bit of a simplification to refer to the
+objects in the second list as words. Try changing s2 in the above
 program to ‘howdy world!’ and running it again. What happened to the
 exclamation mark? Note, that you will have to save your changes before
 using Run Python again.
@@ -336,5 +337,5 @@ that’s ok!
   [From HTML to a List of Words (part 1)]: ../lessons/from-html-to-list-of-words-1
   [zip file from the previous lesson here.]: ../lessons/from-html-to-list-of-words-1#codesync
   [integer]: http://www.python.org/doc/current/lib/typesnumeric.html
-  [*types*]: http://www.python.org/doc/current/lib/types.html
+  [types]: http://www.python.org/doc/current/lib/types.html
   [zip]: ../images/programming-historian2.zip
