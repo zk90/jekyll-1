@@ -4,7 +4,7 @@ title: About the Programming Historian
 redirect_from: /about.html
 ---
 <figure>
-	<img src="../images/about.png" width="290px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/about.png" width="290px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 _The Programming Historian_ offers novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques, and workflows to facilitate their research.

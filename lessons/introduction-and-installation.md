@@ -72,7 +72,7 @@ doesn't work on your platform, please let us know.
   [Zotero]: http://www.zotero.org/
   [Jungle Disk]: https://www.jungledisk.com/
   [Dropbox]: https://www.dropbox.com/home
-  [Viewing HTML Files]: ../lessons/viewing-html-files
-  [Mac Python Installation]: ../lessons/mac-installation
-  [Windows Python Installation]: ../lessons/windows-installation
-  [Linux Python Installation]: ../lessons/linux-installation
+  [Viewing HTML Files]: {{ site.baseurl }}/lessons/viewing-html-files
+  [Mac Python Installation]: {{ site.baseurl }}/lessons/mac-installation
+  [Windows Python Installation]: {{ site.baseurl }}/lessons/windows-installation
+  [Linux Python Installation]: {{ site.baseurl }}/lessons/linux-installation

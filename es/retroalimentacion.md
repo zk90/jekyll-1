@@ -6,7 +6,7 @@ redirect_from: /report-issue.html
 ---
 
 <figure>
-	<img src="../images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 ¿Viste algún problema con alguna lección de *The Programming Historian en español*? ¿Código que no funciona o que necesita explicaciones más claras? ¿Errores de tipografía? ¿Sintaxis que no parece correcta? Gracias por tomarte el tiempo de advertirnos de un problema o de sugerir un cambio. Tu ayuda es crucial para ayudarnos a mantener los más altos estándares en nuestras lecciones.

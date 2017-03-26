@@ -283,6 +283,6 @@ path to the directory on your own computer.
 
 -   python-lessons7.zip [zip sync][]
 
-  [Counting Frequencies]: ../lessons/counting-frequencies
-  [zip file from the previous lesson]: ../assets/python-lessons6.zip
-  [zip sync]: ../assets/python-lessons7.zip
+  [Counting Frequencies]: {{ site.baseurl }}/lessons/counting-frequencies
+  [zip file from the previous lesson]: {{ site.baseurl }}/assets/python-lessons6.zip
+  [zip sync]: {{ site.baseurl }}/assets/python-lessons7.zip

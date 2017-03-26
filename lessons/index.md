@@ -13,22 +13,22 @@ APIs let you programmatically request specific information from a website. Learn
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/intro-to-the-zotero-api">
-      <img src="../gallery/intro-to-the-zotero-api.png">
+    <a htef="{{ site.baseurl }}/lessons/intro-to-the-zotero-api">
+      <img src="{{ site.baseurl }}/gallery/intro-to-the-zotero-api.png">
       <h3>Intro to the Zotero API</h3>
       <p>Amanda Morton</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/creating-new-items-in-zotero">
-      <img src="../gallery/creating-new-items-in-zotero.png">
+    <a htef="{{ site.baseurl }}/lessons/creating-new-items-in-zotero">
+      <img src="{{ site.baseurl }}/gallery/creating-new-items-in-zotero.png">
       <h3>Creating New Items in Zotero</h3>
       <p>Amanda Morton</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/counting-frequencies-from-zotero-items">
-      <img src="../gallery/counting-frequencies-from-zotero-items.png">
+    <a htef="{{ site.baseurl }}/lessons/counting-frequencies-from-zotero-items">
+      <img src="{{ site.baseurl }}/gallery/counting-frequencies-from-zotero-items.png">
       <h3>Counting Frequencies from Zotero Items</h3>
       <p>Spencer Roberts</p>
     </a>
@@ -43,36 +43,36 @@ You put a lot of effort into your research. Make sure that effort lasts by adopt
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/preserving-your-research-data">
-      <img src="../gallery/preserving-your-research-data.png">
+    <a htef="{{ site.baseurl }}/lessons/preserving-your-research-data">
+      <img src="{{ site.baseurl }}/gallery/preserving-your-research-data.png">
       <h3>Preserving Research Data</h3>
       <p>James Baker</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/getting-started-with-markdown">
-      <img src="../gallery/getting-started-with-markdown.png">
+    <a htef="{{ site.baseurl }}/lessons/getting-started-with-markdown">
+      <img src="{{ site.baseurl }}/gallery/getting-started-with-markdown.png">
       <h3>Getting Started with Markdown</h3>
       <p>Sarah Simpkin</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown">
-      <img src="../gallery/sustainable-authorship-in-plain-text-using-pandoc-and-markdown.png">
+    <a htef="{{ site.baseurl }}/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown">
+      <img src="{{ site.baseurl }}/gallery/sustainable-authorship-in-plain-text-using-pandoc-and-markdown.png">
       <h3>Sustainable Authorship in Plain Text using Pandoc and Markdown</h3>
       <p>Dennis Tenen and Grant Wythoff</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/getting-started-with-github-desktop">
-      <img src="../gallery/getting-started-with-github-desktop.png">
+    <a htef="{{ site.baseurl }}/lessons/getting-started-with-github-desktop">
+      <img src="{{ site.baseurl }}/gallery/getting-started-with-github-desktop.png">
       <h3>Introduction to Version Control Using GitHub Desktop</h3>
       <p>Daniel van Strien</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/building-static-sites-with-jekyll-github-pages">
-      <img src="../gallery/building-static-sites-with-jekyll-github-pages.png">
+    <a htef="{{ site.baseurl }}/lessons/building-static-sites-with-jekyll-github-pages">
+      <img src="{{ site.baseurl }}/gallery/building-static-sites-with-jekyll-github-pages.png">
       <h3>Building Static Websites with Markdown, Jekyll, and Github Pages</h3>
       <p>Amanda Visconti</p>
     </a>
@@ -88,92 +88,92 @@ Just like it sounds, learn how to use programming to change, move, clean, or cou
 
 <ul class="lesson-images">
     <li>
-    <a href="../lessons/r-basics-with-tabular-data">
-      <img src="../gallery/r-basics-with-tabular-data.png">
+    <a htef="{{ site.baseurl }}/lessons/r-basics-with-tabular-data">
+      <img src="{{ site.baseurl }}/gallery/r-basics-with-tabular-data.png">
       <h3>R Basics with Tabular Data</h3>
       <p>Taryn Dewar</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/intro-to-bash">
-      <img src="../gallery/intro-to-bash.png">
+    <a htef="{{ site.baseurl }}/lessons/intro-to-bash">
+      <img src="{{ site.baseurl }}/gallery/intro-to-bash.png">
       <h3>Introduction to the Bash Command Line</h3>
       <p>Ian Milligan and James Baker</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/intro-to-powershell">
-      <img src="../gallery/intro-to-powershell.png">
+    <a htef="{{ site.baseurl }}/lessons/intro-to-powershell">
+      <img src="{{ site.baseurl }}/gallery/intro-to-powershell.png">
       <h3>Introduction to the Windows Command Line with PowerShell</h3>
       <p>Ted Dawson</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/research-data-with-unix">
-      <img src="../gallery/research-data-with-unix.png">
+    <a htef="{{ site.baseurl }}/lessons/research-data-with-unix">
+      <img src="{{ site.baseurl }}/gallery/research-data-with-unix.png">
       <h3>Counting and mining research data with Unix</h3>
       <p>James Baker and Ian Milligan</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/cleaning-data-with-openrefine">
-      <img src="../gallery/cleaning-data-with-openrefine.png">
+    <a htef="{{ site.baseurl }}/lessons/cleaning-data-with-openrefine">
+      <img src="{{ site.baseurl }}/gallery/cleaning-data-with-openrefine.png">
       <h3>Cleaning Data with OpenRefine</h3>
       <p>Seth van Hooland, Ruben Verborgh, Max De Wilde</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/understanding-regular-expressions">
-      <img src="../gallery/understanding-regular-expressions.png">
+    <a htef="{{ site.baseurl }}/lessons/understanding-regular-expressions">
+      <img src="{{ site.baseurl }}/gallery/understanding-regular-expressions.png">
       <h3>Understanding Regular Expressions</h3>
       <p>Doug Knox</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/cleaning-ocrd-text-with-regular-expressions">
-      <img src="../gallery/cleaning-ocrd-text-with-regular-expressions.png">
+    <a htef="{{ site.baseurl }}/lessons/cleaning-ocrd-text-with-regular-expressions">
+      <img src="{{ site.baseurl }}/gallery/cleaning-ocrd-text-with-regular-expressions.png">
       <h3>Cleaning OCR’d Text with Regular Expressions</h3>
       <p>Laura Turner O’Hara</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/transliterating">
-      <img src="../gallery/transliterating.png">
+    <a htef="{{ site.baseurl }}/lessons/transliterating">
+      <img src="{{ site.baseurl }}/gallery/transliterating.png">
       <h3>Transliterating non-ASCII Characters with Python</h3>
       <p>Seth Bernstein</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/generating-an-ordered-data-set-from-an-OCR-text-file">
-      <img src="../gallery/generating-an-ordered-data-set-from-an-OCR-text-file.png">
+    <a htef="{{ site.baseurl }}/lessons/generating-an-ordered-data-set-from-an-OCR-text-file">
+      <img src="{{ site.baseurl }}/gallery/generating-an-ordered-data-set-from-an-OCR-text-file.png">
       <h3>Generating an Ordered Data Set from an OCR Text File</h3>
       <p>Jon Crump</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/extracting-keywords">
-      <img src="../gallery/extracting-keywords.png">
+    <a htef="{{ site.baseurl }}/lessons/extracting-keywords">
+      <img src="{{ site.baseurl }}/gallery/extracting-keywords.png">
       <h3>Using Gazetteers to Extract Keywords from Sets of Free-Flowing Texts</h3>
       <p>Adam Crymble</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/transforming-xml-with-xsl">
-      <img src="../gallery/transforming-xml-with-xsl.png">
+    <a htef="{{ site.baseurl }}/lessons/transforming-xml-with-xsl">
+      <img src="{{ site.baseurl }}/gallery/transforming-xml-with-xsl.png">
       <h3>Transforming Data for Reuse and Re-publication with XML and XSL</h3>
       <p>M.H. Beals</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/json-and-jq">
-      <img src="../gallery/json-and-jq.png">
+    <a htef="{{ site.baseurl }}/lessons/json-and-jq">
+      <img src="{{ site.baseurl }}/gallery/json-and-jq.png">
       <h3>Reshaping JSON with jq</h3>
       <p>Matthew Lincoln</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/editing-audio-with-audacity">
-      <img src="../gallery/editing-audio-with-audacity.png">
+    <a htef="{{ site.baseurl }}/lessons/editing-audio-with-audacity">
+      <img src="{{ site.baseurl }}/gallery/editing-audio-with-audacity.png">
       <h3>Editing Audio with Audacity</h3>
       <p>Brandon Walsh</p>
     </a>
@@ -188,36 +188,36 @@ Computational tools allow you to make sense of a lot of documents at once. The N
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/corpus-analysis-with-antconc">
-      <img src="../gallery/corpus-analysis-with-antconc.png">
+    <a htef="{{ site.baseurl }}/lessons/corpus-analysis-with-antconc">
+      <img src="{{ site.baseurl }}/gallery/corpus-analysis-with-antconc.png">
       <h3>Corpus Analysis with Antconc</h3>
       <p>Heather Froehlich</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/naive-bayesian">
-      <img src="../gallery/naive-bayesian.png">
+    <a htef="{{ site.baseurl }}/lessons/naive-bayesian">
+      <img src="{{ site.baseurl }}/gallery/naive-bayesian.png">
       <h3>Supervised Classification with a Naive Bayesian</h3>
       <p>Vilja Hulden</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/topic-modeling-and-mallet">
-      <img src="../gallery/topic-modeling-and-mallet.png">
+    <a htef="{{ site.baseurl }}/lessons/topic-modeling-and-mallet">
+      <img src="{{ site.baseurl }}/gallery/topic-modeling-and-mallet.png">
       <h3>Getting Started with Topic Modeling and MALLET</h3>
       <p>Shawn Graham, Scott Weingart, & Ian Milligan</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/sonification">
-      <img src="../gallery/sonification.png">
+    <a htef="{{ site.baseurl }}/lessons/sonification">
+      <img src="{{ site.baseurl }}/gallery/sonification.png">
       <h3>The Sound of Data (a gentle introduction to sonification for historians)</h3>
       <p>Shawn Graham</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/text-mining-with-extracted-features">
-      <img src="../gallery/text-mining-with-extracted-features.png">
+    <a htef="{{ site.baseurl }}/lessons/text-mining-with-extracted-features">
+      <img src="{{ site.baseurl }}/gallery/text-mining-with-extracted-features.png">
       <h3>Text Mining in Python through the HTRC Feature Reader</h3>
       <p>Peter Organisciak and Boris Capitanu</p>
     </a>
@@ -233,8 +233,8 @@ Many of the tutorials require that you install one or more python modules to sav
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/installing-python-modules-pip">
-      <img src="../gallery/installing-python-modules-pip.png">
+    <a htef="{{ site.baseurl }}/lessons/installing-python-modules-pip">
+      <img src="{{ site.baseurl }}/gallery/installing-python-modules-pip.png">
       <h3>Installing Python Modules with pip</h3>
       <p>Fred Gibbs</p>
     </a>
@@ -248,8 +248,8 @@ Many research datasets are published as Linked Open Data, a format that allows f
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/graph-databases-and-SPARQL">
-      <img src="../gallery/graph-databases-and-SPARQL.jpg">
+    <a htef="{{ site.baseurl }}/lessons/graph-databases-and-SPARQL">
+      <img src="{{ site.baseurl }}/gallery/graph-databases-and-SPARQL.jpg">
       <h3>Using SPARQL to access Linked Open Data</h3>
       <p>Matthew Lincoln</p>
     </a>
@@ -265,36 +265,36 @@ Mapping can be an effective way to visualize and interpret historical data. Thes
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/googlemaps-googleearth">
-      <img src="../gallery/googlemaps-googleearth.png">
+    <a htef="{{ site.baseurl }}/lessons/googlemaps-googleearth">
+      <img src="{{ site.baseurl }}/gallery/googlemaps-googleearth.png">
       <h3>Intro to Google Maps and Google Earth</h3>
       <p>Jim Clifford, Josh MacFadyen, Daniel Macfarlane</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/qgis-layers">
-      <img src="../gallery/qgis-layers.png">
+    <a htef="{{ site.baseurl }}/lessons/qgis-layers">
+      <img src="{{ site.baseurl }}/gallery/qgis-layers.png">
       <h3>Installing QGIS 2.0 and Adding Layers</h3>
       <p>Jim Clifford, Josh MacFadyen, Daniel Macfarlane</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/vector-layers-qgis">
-      <img src="../gallery/vector-layers-qgis.png">
+    <a htef="{{ site.baseurl }}/lessons/vector-layers-qgis">
+      <img src="{{ site.baseurl }}/gallery/vector-layers-qgis.png">
       <h3>Creating New Vector Layers in QGIS 2.0</h3>
       <p>Jim Clifford, Josh MacFadyen, Daniel Macfarlane</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/georeferencing-qgis">
-      <img src="../gallery/georeferencing-qgis.png">
+    <a htef="{{ site.baseurl }}/lessons/georeferencing-qgis">
+      <img src="{{ site.baseurl }}/gallery/georeferencing-qgis.png">
       <h3>Georeferencing in QGIS 2.0</h3>
       <p>Jim Clifford, Josh MacFadyen, Daniel Macfarlane</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/geocoding-qgis">
-      <img src="../gallery/geocoding-qgis.png">
+    <a htef="{{ site.baseurl }}/lessons/geocoding-qgis">
+      <img src="{{ site.baseurl }}/gallery/geocoding-qgis.png">
       <h3>Geocoding Historical Data Using QGIS</h3>
       <p>Justin Colson</p>
     </a>
@@ -308,8 +308,8 @@ Network visualizations can help humanities scholars reveal hidden and complex pa
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/creating-network-diagrams-from-historical-sources">
-      <img src="../gallery/creating-network-diagrams-from-historical-sources.png">
+    <a htef="{{ site.baseurl }}/lessons/creating-network-diagrams-from-historical-sources">
+      <img src="{{ site.baseurl }}/gallery/creating-network-diagrams-from-historical-sources.png">
       <h3>Creating Network Diagrams from Historical Sources</h3>
       <p>Marten Düring</p>
     </a>
@@ -324,29 +324,29 @@ Learn how to present historical materials online.
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/up-and-running-with-omeka">
-      <img src="../gallery/up-and-running-with-omeka.png">
+    <a htef="{{ site.baseurl }}/lessons/up-and-running-with-omeka">
+      <img src="{{ site.baseurl }}/gallery/up-and-running-with-omeka.png">
       <h3>Up and Running with Omeka.net</h3>
       <p>Miriam Posner</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/creating-an-omeka-exhibit">
-      <img src="../gallery/creating-an-omeka-exhibit.png">
+    <a htef="{{ site.baseurl }}/lessons/creating-an-omeka-exhibit">
+      <img src="{{ site.baseurl }}/gallery/creating-an-omeka-exhibit.png">
       <h3>Creating an Omeka.net Exhibit</h3>
       <p>Miriam Posner and Megan R. Brett</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/installing-omeka">
-      <img src="../gallery/installing-omeka.jpg">
+    <a htef="{{ site.baseurl }}/lessons/installing-omeka">
+      <img src="{{ site.baseurl }}/gallery/installing-omeka.jpg">
       <h3>Installing Omeka</h3>
       <p>Jonathan Reeve</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/intro-to-augmented-reality-with-unity">
-      <img src="../gallery/intro-to-augmented-reality-with-unity.png">
+    <a htef="{{ site.baseurl }}/lessons/intro-to-augmented-reality-with-unity">
+      <img src="{{ site.baseurl }}/gallery/intro-to-augmented-reality-with-unity.png">
       <h3>Introduction to Mobile Augmented Reality with Unity</h3>
       <p>Jacob W. Greene</p>
     </a>
@@ -361,36 +361,36 @@ Learn how to use programming to download material from the Internet in a control
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/data-mining-the-internet-archive">
-      <img src="../gallery/data-mining-the-internet-archive.png">
+    <a htef="{{ site.baseurl }}/lessons/data-mining-the-internet-archive">
+      <img src="{{ site.baseurl }}/gallery/data-mining-the-internet-archive.png">
       <h3>Datamining the Internet Archive Collection</h3>
       <p>Caleb McDaniel</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/automated-downloading-with-wget">
-      <img src="../gallery/automated-downloading-with-wget.png">
+    <a htef="{{ site.baseurl }}/lessons/automated-downloading-with-wget">
+      <img src="{{ site.baseurl }}/gallery/automated-downloading-with-wget.png">
       <h3>Automated Downloading with Wget</h3>
       <p>Ian Milligan</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/applied-archival-downloading-with-wget">
-      <img src="../gallery/applied-archival-downloading-with-wget.png">
+    <a htef="{{ site.baseurl }}/lessons/applied-archival-downloading-with-wget">
+      <img src="{{ site.baseurl }}/gallery/applied-archival-downloading-with-wget.png">
       <h3>Applied Archival Downloading with Wget</h3>
       <p>Kellen Kurschinski</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/intro-to-beautiful-soup">
-      <img src="../gallery/intro-to-beautiful-soup.png">
+    <a htef="{{ site.baseurl }}/lessons/intro-to-beautiful-soup">
+      <img src="{{ site.baseurl }}/gallery/intro-to-beautiful-soup.png">
       <h3>Intro to Beautiful Soup</h3>
       <p>Jeri Wieringa</p>
     </a>
   </li>
   <li>
-    <a href="../lessons/downloading-multiple-records-using-query-strings">
-      <img src="../gallery/downloading-multiple-records-using-query-strings.png">
+    <a htef="{{ site.baseurl }}/lessons/downloading-multiple-records-using-query-strings">
+      <img src="{{ site.baseurl }}/gallery/downloading-multiple-records-using-query-strings.png">
       <h3>Downloading Multiple Records Using Query Strings</h3>
       <p>Adam Crymble</p>
     </a>
@@ -406,120 +406,120 @@ were intended to be followed in sequence.
 
 <ul class="lesson-images">
   <li>
-    <a href="../lessons/introduction-and-installation">
-      <img src="../gallery/introduction-and-installation.png">
+    <a htef="{{ site.baseurl }}/lessons/introduction-and-installation">
+      <img src="{{ site.baseurl }}/gallery/introduction-and-installation.png">
       <h3>Python Introduction and Installation</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/mac-installation">
-      <img src="../gallery/mac-installation.png">
+    <a htef="{{ site.baseurl }}/lessons/mac-installation">
+      <img src="{{ site.baseurl }}/gallery/mac-installation.png">
       <h3>Setting Up an Integrated Development Environment for Python for Mac</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
       <li>
-    <a href="../lessons/windows-installation">
-      <img src="../gallery/windows-installation.png">
+    <a htef="{{ site.baseurl }}/lessons/windows-installation">
+      <img src="{{ site.baseurl }}/gallery/windows-installation.png">
       <h3>Setting Up an Integrated Development Environment for Python for Windows</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
       <li>
-    <a href="../lessons/linux-installation">
-      <img src="../gallery/linux-installation.png">
+    <a htef="{{ site.baseurl }}/lessons/linux-installation">
+      <img src="{{ site.baseurl }}/gallery/linux-installation.png">
       <h3>Setting Up an Integrated Development Environment for Python for Linux</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/viewing-html-files">
-      <img src="../gallery/viewing-html-files.png">
+    <a htef="{{ site.baseurl }}/lessons/viewing-html-files">
+      <img src="{{ site.baseurl }}/gallery/viewing-html-files.png">
       <h3>Understanding Web Pages and HTML</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/working-with-text-files">
-      <img src="../gallery/working-with-text-files.png">
+    <a htef="{{ site.baseurl }}/lessons/working-with-text-files">
+      <img src="{{ site.baseurl }}/gallery/working-with-text-files.png">
       <h3>Working with Text Files in Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/code-reuse-and-modularity">
-      <img src="../gallery/code-reuse-and-modularity.png">
+    <a htef="{{ site.baseurl }}/lessons/code-reuse-and-modularity">
+      <img src="{{ site.baseurl }}/gallery/code-reuse-and-modularity.png">
       <h3>Code Reuse and Modularity in Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/working-with-web-pages">
-      <img src="../gallery/working-with-web-pages.png">
+    <a htef="{{ site.baseurl }}/lessons/working-with-web-pages">
+      <img src="{{ site.baseurl }}/gallery/working-with-web-pages.png">
       <h3>Downloading Web Pages with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/manipulating-strings-in-python">
-      <img src="../gallery/manipulating-strings-in-python.png">
+    <a htef="{{ site.baseurl }}/lessons/manipulating-strings-in-python">
+      <img src="{{ site.baseurl }}/gallery/manipulating-strings-in-python.png">
       <h3>Manipulating Strings in Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/from-html-to-list-of-words-1">
-      <img src="../gallery/from-html-to-list-of-words-1.png">
+    <a htef="{{ site.baseurl }}/lessons/from-html-to-list-of-words-1">
+      <img src="{{ site.baseurl }}/gallery/from-html-to-list-of-words-1.png">
       <h3>From HTML to a List of Words (part 1)</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/from-html-to-list-of-words-2">
-      <img src="../gallery/from-html-to-list-of-words-2.png">
+    <a htef="{{ site.baseurl }}/lessons/from-html-to-list-of-words-2">
+      <img src="{{ site.baseurl }}/gallery/from-html-to-list-of-words-2.png">
       <h3>From HTML to a List of Words (part 2)</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/normalizing-data">
-      <img src="../gallery/normalizing-data.png">
+    <a htef="{{ site.baseurl }}/lessons/normalizing-data">
+      <img src="{{ site.baseurl }}/gallery/normalizing-data.png">
       <h3>Normalizing Textual Data with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/counting-frequencies">
-      <img src="../gallery/counting-frequencies.png">
+    <a htef="{{ site.baseurl }}/lessons/counting-frequencies">
+      <img src="{{ site.baseurl }}/gallery/counting-frequencies.png">
       <h3>Counting Word Frequency with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/creating-and-viewing-html-files-with-python">
-      <img src="../gallery/creating-and-viewing-html-files-with-python.png">
+    <a htef="{{ site.baseurl }}/lessons/creating-and-viewing-html-files-with-python">
+      <img src="{{ site.baseurl }}/gallery/creating-and-viewing-html-files-with-python.png">
       <h3>Creating and Viewing HTML Files with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/output-data-as-html-file">
-      <img src="../gallery/output-data-as-html-file.png">
+    <a htef="{{ site.baseurl }}/lessons/output-data-as-html-file">
+      <img src="{{ site.baseurl }}/gallery/output-data-as-html-file.png">
       <h3>Output Data as an HTML File with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/keywords-in-context-using-n-grams">
-      <img src="../gallery/keywords-in-context-using-n-grams.png">
+    <a htef="{{ site.baseurl }}/lessons/keywords-in-context-using-n-grams">
+      <img src="{{ site.baseurl }}/gallery/keywords-in-context-using-n-grams.png">
       <h3>Keywords in Context (Using n-grams) with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="../lessons/output-keywords-in-context-in-html-file">
-      <img src="../gallery/output-keywords-in-context-in-html-file.png">
+    <a htef="{{ site.baseurl }}/lessons/output-keywords-in-context-in-html-file">
+      <img src="{{ site.baseurl }}/gallery/output-keywords-in-context-in-html-file.png">
       <h3>Output Keywords in Context in an HTML File with Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>

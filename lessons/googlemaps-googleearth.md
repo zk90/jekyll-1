@@ -477,52 +477,52 @@ your work!**
 *This lesson is part of the [Geospatial Historian][].*
 
   [Google Maps Engine Lite]: https://mapsengine.google.com
-  [geo1]: ../images/geo1.png
-  [geo2]: ../images/geo2.png
-  [geo3]: ../images/geo3.png
-  [geo4]: ../images/geo4.png
-  [geo5]: ../images/geo5.png
-  [geo6]: ../images/geo6.png
+  [geo1]: {{ site.baseurl }}/images/geo1.png
+  [geo2]: {{ site.baseurl }}/images/geo2.png
+  [geo3]: {{ site.baseurl }}/images/geo3.png
+  [geo4]: {{ site.baseurl }}/images/geo4.png
+  [geo5]: {{ site.baseurl }}/images/geo5.png
+  [geo6]: {{ site.baseurl }}/images/geo6.png
   [UK Global Fat Supply CSV file]: https://github.com/programminghistorian/jekyll/files/148984/UK.Global.Fat.Supply.1894-1896.-.Sheet1.csv.zip
-  [geo7]: ../images/geo7.png
-  [geo8]: ../images/geo8.png
-  [geo9]: ../images/geo9.png
-  [geo10]: ../images/geo10.png
-  [geo11]: ../images/geo11.png
-  [geo12]: ../images/geo12.png
-  [Creating New Vector Layers in QGIS 2.0]: ../lessons/vector-layers-qgis
-  [geo13]: ../images/geo13.png
-  [geo14]: ../images/geo14.png
-  [geo15]: ../images/geo15.png
-  [geo16]: ../images/geo16.png
-  [geo17]: ../images/geo17.png
-  [geo18]: ../images/geo18.png
-  [geo19]: ../images/geo19.png
-  [geo20]: ../images/geo20.png
-  [geo21]: ../images/geo21.png
-  [geo22]: ../images/geo22.png
-  [geo23]: ../images/geo23.png
-  [geo24]: ../images/geo24.png
+  [geo7]: {{ site.baseurl }}/images/geo7.png
+  [geo8]: {{ site.baseurl }}/images/geo8.png
+  [geo9]: {{ site.baseurl }}/images/geo9.png
+  [geo10]: {{ site.baseurl }}/images/geo10.png
+  [geo11]: {{ site.baseurl }}/images/geo11.png
+  [geo12]: {{ site.baseurl }}/images/geo12.png
+  [Creating New Vector Layers in QGIS 2.0]: {{ site.baseurl }}/lessons/vector-layers-qgis
+  [geo13]: {{ site.baseurl }}/images/geo13.png
+  [geo14]: {{ site.baseurl }}/images/geo14.png
+  [geo15]: {{ site.baseurl }}/images/geo15.png
+  [geo16]: {{ site.baseurl }}/images/geo16.png
+  [geo17]: {{ site.baseurl }}/images/geo17.png
+  [geo18]: {{ site.baseurl }}/images/geo18.png
+  [geo19]: {{ site.baseurl }}/images/geo19.png
+  [geo20]: {{ site.baseurl }}/images/geo20.png
+  [geo21]: {{ site.baseurl }}/images/geo21.png
+  [geo22]: {{ site.baseurl }}/images/geo22.png
+  [geo23]: {{ site.baseurl }}/images/geo23.png
+  [geo24]: {{ site.baseurl }}/images/geo24.png
   [www.davidrumsey.com]: http://www.davidrumsey.com/
-  [geo25]: ../images/geo25.png
-  [geo26]: ../images/geo26.png
-  [Georeferencing in QGIS 2.0]: ../lessons/georeferencing-qgis
-  [geo27]: ../images/geo27.png
-  [geo28]: ../images/geo28.png
+  [geo25]: {{ site.baseurl }}/images/geo25.png
+  [geo26]: {{ site.baseurl }}/images/geo26.png
+  [Georeferencing in QGIS 2.0]: {{ site.baseurl }}/lessons/georeferencing-qgis
+  [geo27]: {{ site.baseurl }}/images/geo27.png
+  [geo28]: {{ site.baseurl }}/images/geo28.png
   [Maps Engine Lite]: https://mapsengine.google.com/map/
   [Seaway map]: https://github.com/programminghistorian/jekyll/files/148993/seaway.zip
-  [geo29]: ../images/geo29.png
-  [geo30]: ../images/geo30.png
-  [geo31]: ../images/geo31.png
-  [geo32]: ../images/geo32.png
-  [geo33]: ../images/geo33.png
-  [geo34]: ../images/geo34.png
-  [geo35]: ../images/geo35.png
+  [geo29]: {{ site.baseurl }}/images/geo29.png
+  [geo30]: {{ site.baseurl }}/images/geo30.png
+  [geo31]: {{ site.baseurl }}/images/geo31.png
+  [geo32]: {{ site.baseurl }}/images/geo32.png
+  [geo33]: {{ site.baseurl }}/images/geo33.png
+  [geo34]: {{ site.baseurl }}/images/geo34.png
+  [geo35]: {{ site.baseurl }}/images/geo35.png
   [Mobile Mapping and Historical GIS in the Field]: http://niche-canada.org/2011/12/14/mobile-mapping-and-historical-gis-in-the-field/
     "Mobile Mapping and Historical GIS in the Field"
-  [geo36]: ../images/geo36.png
-  [geo37]: ../images/geo37.png
-  [geo38]: ../images/geo38.png
-  [geo39]: ../images/geo39.png
-  [geo40]: ../images/geo40.png
+  [geo36]: {{ site.baseurl }}/images/geo36.png
+  [geo37]: {{ site.baseurl }}/images/geo37.png
+  [geo38]: {{ site.baseurl }}/images/geo38.png
+  [geo39]: {{ site.baseurl }}/images/geo39.png
+  [geo40]: {{ site.baseurl }}/images/geo40.png
   [Geospatial Historian]: http://geospatialhistorian.wordpress.com/

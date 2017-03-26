@@ -15,7 +15,7 @@ Esta guía pretende responder preguntas frecuentes y ayudar a los revisores a co
 ## Nuestra filosofía
 
 <figure>
-	<img src="../images/reviewer-sm.png" width="150px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reviewer-sm.png" width="150px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Para el equipo de _The Programming Historian en español_ revisar una traducción o una lección nueva constituye una oportunidad para aprender una nueva habilidad (a cualquier nivel) y para contribuir en la comunidad de humanidades digitales al mismo tiempo. Por eso nos esforzarmos en que nuestros revisores reciban crédito y reconocimiento por su trabajo.  

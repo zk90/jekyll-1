@@ -1196,17 +1196,17 @@ helpful:
 
 
   [Old Bailey Online]: http://www.oldbaileyonline.org/
-  [Automated Downloading with WGET]: ../lessons/automated-downloading-with-wget
+  [Automated Downloading with WGET]: {{ site.baseurl }}/lessons/automated-downloading-with-wget
   [Benjamin Bowsey’s case]: http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33
   [advanced search form]: http://www.oldbaileyonline.org/forms/formMain.jsp
   [Calculate Total]: http://www.oldbaileyonline.org/search.jsp?foo=bar&form=searchHomePage&_divs_fulltext=mulatto*+negro*&kwparse=advanced&_divs_div0Type_div1Type=sessionsPaper%7CtrialAccount&fromYear=1700&fromMonth=00&toYear=1750&toMonth=99&start=0&count=0
-  [Viewing HTML Files]: ../lessons/viewing-html-files
-  [Working with Webpages]: ../lessons/working-with-web-pages
-  [From HTML to a List of Words 2]: ../lessons/from-html-to-list-of-words-2
+  [Viewing HTML Files]: {{ site.baseurl }}/lessons/viewing-html-files
+  [Working with Webpages]: {{ site.baseurl }}/lessons/working-with-web-pages
+  [From HTML to a List of Words 2]: {{ site.baseurl }}/lessons/from-html-to-list-of-words-2
   [modulo]: http://docs.python.org/release/2.5.2/ref/binary.html
   [range]: http://docs.python.org/2/tutorial/controlflow.html#the-range-function
   [regular expressions]: http://docs.python.org/2/library/re.html
-  [Counting Frequencies]: ../lessons/counting-frequencies
+  [Counting Frequencies]: {{ site.baseurl }}/lessons/counting-frequencies
   [time out]: http://www.checkupdown.com/status/E408.html
   [Python Programming Basics]: http://programminghistorian.org/lessons/introduction-and-installation
   [try / except]: http://docs.python.org/tutorial/errors.html

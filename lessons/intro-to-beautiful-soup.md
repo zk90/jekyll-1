@@ -532,11 +532,11 @@ for tr in trs:
 
 You’ve done it! You have created a CSV file from all of the data in the table, creating useful data from the confusion of the html page.
 
-  [Working with Text Files]: ../lessons/working-with-text-files
+  [Working with Text Files]: {{ site.baseurl }}/lessons/working-with-text-files
   [Command Line Bootcamp]: http://praxis.scholarslab.org/scratchpad/bash/
   [Opening lines of Beautiful Soup]: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-  [installing python modules]: ../lessons/installing-python-modules-pip
+  [installing python modules]: {{ site.baseurl }}/lessons/installing-python-modules-pip
   [urllib3]: http://urllib3.readthedocs.org/en/latest/
-  [Automated Downloading with Wget]: ../lessons/automated-downloading-with-wget
-  [Downloading Multiple Records Using Query Strings]: ../lessons/downloading-multiple-records-using-query-strings
+  [Automated Downloading with Wget]: {{ site.baseurl }}/lessons/automated-downloading-with-wget
+  [Downloading Multiple Records Using Query Strings]: {{ site.baseurl }}/lessons/downloading-multiple-records-using-query-strings
   [Document Object Model]: https://en.wikipedia.org/wiki/Document_Object_Model

@@ -14,7 +14,7 @@ Esta página contiene instrucciones para los autores que deseen contribuir con u
 # Traducir o proponer una lección nueva
 
 <figure>
-    <img src="../images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+    <img src="{{ site.baseurl }}/images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Si quieres traducir una lección, tienes una idea para una lección nueva o ya has escrito un tutorial que crees que puede adaptarse a *The Programming Historian en español*, contacta con [Antonio Rojas Castro]. Cuanto antes te pongas en contacto con nosotros, mucho mejor; de esta manera, te ayudaremos a plantear adecuadamente tu contribución, teniendo en cuenta el público objetivo y el nivel de conocimientos necesarios. También te asignaremos un editor para ayudarte a resolver dudas y a desarrollar la lección de la mejor manera.
@@ -185,8 +185,8 @@ Al procesar el marcado, nuestra plataforma de publicación convertirá esta lín
 
 ``` html
 <figure>
-    <a href="../images/LESSON-SLUG/NOMBRE-DEL-ARCHIVO-DE-IMAGEN">
-       <img src="../images/LESSON-SLUG/NOMBRE-DEL-ARCHIVO-DE-IMAGEN" alt="Pie de la ilustración">
+    <a htef="{{ site.baseurl }}/images/LESSON-SLUG/NOMBRE-DEL-ARCHIVO-DE-IMAGEN">
+       <img src="{{ site.baseurl }}/images/LESSON-SLUG/NOMBRE-DEL-ARCHIVO-DE-IMAGEN" alt="Pie de la ilustración">
     </a>
 <figcaption>
     Caption to image
@@ -311,11 +311,11 @@ Finalmente, el equipo editorial the *The Programming Historian en español* revi
 [lecciones en desarrollo]: https://github.com/programminghistorian/ph-submissions/tree/gh-pages/lessons
   [Ian Milligan]: mailto:i2millig@uwaterloo.ca
   [Lesson Pipeline wiki page]: https://github.com/programminghistorian/jekyll/wiki/Lesson-Pipeline
-  [reviewer guidlines]: ../reviewer-guidelines.html
+  [reviewer guidlines]: {{ site.baseurl }}/reviewer-guidelines.html
   [published lessons]: lessons
   [TextWrangler]: http://www.barebones.com/products/textwrangler/
   [Notepad++]: https://notepad-plus-plus.org/
-  [project team]: ../project-team.html
+  [project team]: {{ site.baseurl }}/project-team.html
   [slug]: https://en.wikipedia.org/wiki/Semantic_URL#Slug
   [YAML]: https://es.wikipedia.org/wiki/YAML
   [GitHub Guide to Markdown]: https://guides.github.com/features/mastering-markdown/

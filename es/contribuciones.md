@@ -9,7 +9,7 @@ _The Programming Historian en español_ es posible gracias al esfuerzo de volunt
 
 ## Traduce una lección
 <figure>
-	<img src="../images/translator.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/translator.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Si tienes dominio del inglés y del español, puedes traducir una lección ya publicada en _The programming Historian_. De esta manera participarás en la comunidad hispánica de las humanidades digitales y profundizarás en un lenguaje, método o tecnología. 
@@ -19,7 +19,7 @@ Buscamos traducciones rigurosas y de lectura amena que tengan en cuenta el conte
 ## Escribe una lección
 
 <figure>
-	<img src="../images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 También aceptamos envíos de [nuevas lecciones] por parte de los autores.
@@ -34,7 +34,7 @@ Si quieres proponer una lección (escrita por ti o por otra persona), envía un 
 ## Únete a nuestro equipo de revisores
 
 <figure>
-	<img src="../images/reviewer-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reviewer-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 La revisión por pares es esencial para producir recursos fiables de calidad. El equipo de _The Programming Historian en español_ tiene en gran estima el proceso de revisión y, además, adopta una aproximación abierta y colaborativa en la que los revisores reciben crédito de manera pública y completa por su trabajo. Para más información sobre nuestra filosofía y forma de trabajar, por favor, consulta la Guía para [revisores].
@@ -45,7 +45,7 @@ Te animamos a que te unas a nuestro equipo de revisores. El tiempo dedicado es f
 ## Conviértete en editor
 
 <figure>
-	<img src="../gallery/editor-guidelines.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/gallery/editor-guidelines.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Nuestro Consejo editorial ayuda a facilitar el proceso de revisión y trabaja con los autores de manera estrecha para mejorar las lecciones. Nuestra [Guía para editores] está pensada para asegurar que todos (editores, revisores, miembros de la comunidad) tengan una experiencia justa y coherente durante el proceso de revisión.
@@ -55,7 +55,7 @@ En el futuro, de manera ocasional, publicaremos anuncios buscando más editores.
 ## Envía tus comentarios e informa sobre errores 
 
 <figure>
-	<img src="../images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Nos gustaría recibir tus [comentarios] sobre cualquier aspecto de _The Programming Historian en español_. ¡Queremos mejorar nuestro trabajo!
@@ -66,7 +66,7 @@ Agradecemos de manera especial alertas sobre lecciones que no funcionan. A medid
 ## Añádenos a tu catálogo de biblioteca 
 
 <figure>
-	<img src="../images/library-catalogue.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/library-catalogue.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 _The Programming Historian_ está registrado en [WorldCat] -gracias a [University of Purdue library] y a Amanda Visconti- y ha sido indexado por el [Directory of Open Access Journals].

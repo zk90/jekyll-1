@@ -6,7 +6,7 @@ redirect_from: /report-issue.html
 ---
 
 <figure>
-	<img src="../images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 See a problem with a lesson on the Programming Historian? Code that doesn't work or needs a clearer explanation? Typos? Syntax that doesn't look quite right? Thank you for taking the time to report a problem or suggest a change. Your assistance is crucial for helping us maintain the highest standards for our lessons.

@@ -10,7 +10,7 @@ The _Programming Historian_ runs on the energy of volunteers, and we welcome con
 ## Write a new lesson
 
 <figure>
-	<img src="../images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 We welcome submissions of [new lessons][submissions] from authors!
@@ -24,7 +24,7 @@ If you'd like to propose a lesson (for you or for someone else to write), email 
 ## Join our team of reviewers
 
 <figure>
-	<img src="../images/reviewer-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reviewer-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Academic peer review is essential for producing trusted high-quality resources. The _Programming Historian_, holds peer review in the highest regard, and we take an open and collaborative approach in which reviewers get full and public credit for their work. For more on our review philosophy and procedures, please see the [Guidelines for Reviewers][reviewers].
@@ -35,7 +35,7 @@ We hope you'll consider joining our team of reviewers. The time commitment is fl
 ## Do Editorial Work
 
 <figure>
-	<img src="../gallery/editor-guidelines.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/gallery/editor-guidelines.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 Our editorial board members help facilitate peer review and work with authors closely to make improvements to their lessons. Our [guidelines for editors](http://programminghistorian.org/editor-guidelines) is meant to ensure that everyone, from authors to reviewers to members of the wider community, receive a fair and consistent experience during peer review.
@@ -45,7 +45,7 @@ From time to time we may advertise that we are seeking more editors.
 ## Provide feedback and report problems
 
 <figure>
-	<img src="../images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/reader-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 We welcome [feedback](../feedback.html) on any aspect of the Programming Historian. Let us know what we can do to make the project better!
@@ -56,7 +56,7 @@ We are especially grateful for tips about lessons that seem to be broken. As URL
 ## Add us to your Library Catalogue
 
 <figure>
-	<img src="../images/library-catalogue.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/library-catalogue.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 This project is our attempt to demonstrate what open access academic publishing can and should be. Please help us spreading the message and providing the widest possible access to this resource by asking your librarian to include the project in your library catalogue.

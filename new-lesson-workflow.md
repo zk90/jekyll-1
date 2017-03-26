@@ -14,7 +14,7 @@ This page contains step-by-step instructions for authors on contributing a new l
 
 # Proposing a New Lesson
 <figure>
-    <img src="../images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+    <img src="{{ site.baseurl }}/images/author-sm.png" width="180px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 If you have an idea for a new lesson, or have already written a tutorial that you think could be adapted for the *Programming Historian*, contact [Jeri Wieringa] to discuss your idea. Getting in touch at an early stage will help everyone to think about how to best frame your lesson (particularly to establish a target audience and expected skill level), and to pair you with an editor who can best help you develop the tutorial. 
@@ -178,8 +178,8 @@ When the Markdown is rendered by our system, this line will automatically produc
 
 ``` html
 <figure>
-    <a href="../images/LESSON-SLUG/IMAGE-FILENAME">
-       <img src="../images/LESSON-SLUG/IMAGE-FILENAME" alt="Caption to image">
+    <a htef="{{ site.baseurl }}/images/LESSON-SLUG/IMAGE-FILENAME">
+       <img src="{{ site.baseurl }}/images/LESSON-SLUG/IMAGE-FILENAME" alt="Caption to image">
     </a>
 <figcaption>
     Caption to image
@@ -326,11 +326,11 @@ Congratulations! You've published a lesson at *Programming Historian*!
 
   [Jeri Wieringa]: mailto:jeri.elizabeth+proghist@gmail.com
   [Lesson Pipeline wiki page]: https://github.com/programminghistorian/jekyll/wiki/Lesson-Pipeline
-  [reviewer guidelines]: ../reviewer-guidelines.html
+  [reviewer guidelines]: {{ site.baseurl }}/reviewer-guidelines.html
   [published lessons]: lessons
   [TextWrangler]: http://www.barebones.com/products/textwrangler/
   [Notepad++]: https://notepad-plus-plus.org/
-  [project team]: ../project-team.html
+  [project team]: {{ site.baseurl }}/project-team.html
   [slug]: https://en.wikipedia.org/wiki/Semantic_URL#Slug
   [YAML]: https://en.wikipedia.org/wiki/YAML
   [GitHub Guide to Markdown]: https://guides.github.com/features/mastering-markdown/

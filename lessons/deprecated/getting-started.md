@@ -578,26 +578,26 @@ file to make sure you have the correct code.
   [Python programming language]: http://www.python.org/
   [Beautiful Soup HTML/XML parser]: http://www.crummy.com/software/BeautifulSoup/
   [Komodo Edit]: http://www.activestate.com/komodo-edit
-  [Mac Instructions]: ../images/apple-150x150.png
+  [Mac Instructions]: {{ site.baseurl }}/images/apple-150x150.png
   [Time Machine]: http://support.apple.com/kb/ht1427
-  []: ../images/komodo-edit-mac.png "komodo-edit-mac"
-  [Windows Instructions]: ../images/windows-150x150.png
-  [Komodo Edit on Windows]: ../images/komodo-edit-windows.png
+  []: {{ site.baseurl }}/images/komodo-edit-mac.png "komodo-edit-mac"
+  [Windows Instructions]: {{ site.baseurl }}/images/windows-150x150.png
+  [Komodo Edit on Windows]: {{ site.baseurl }}/images/komodo-edit-windows.png
     "komodo-edit-windows"
-  [Komodo Default Python Interpreter Settings]: ../images/komodo-python-interpreter.png
+  [Komodo Default Python Interpreter Settings]: {{ site.baseurl }}/images/komodo-python-interpreter.png
     "komodo-python-interpreter"
-  [Run Python Command Windows]: ../images/run-python-windows.png
+  [Run Python Command Windows]: {{ site.baseurl }}/images/run-python-windows.png
     "run-python-windows"
-  [Linux Instructions]: ../images/linux-150x150.png
-  [hello world in Komodo Edit on a Mac]: ../images/hello-world1.png
+  [Linux Instructions]: {{ site.baseurl }}/images/linux-150x150.png
+  [hello world in Komodo Edit on a Mac]: {{ site.baseurl }}/images/hello-world1.png
     "hello-world"
-  [1]: ../images/mac-linux.png
-  [hello world terminal on a Mac]: ../images/hello-world-terminal.png
+  [1]: {{ site.baseurl }}/images/mac-linux.png
+  [hello world terminal on a Mac]: {{ site.baseurl }}/images/hello-world-terminal.png
     "hello-world-terminal"
-  [Python Shell on Windows]: ../images/python-shell-win.png
+  [Python Shell on Windows]: {{ site.baseurl }}/images/python-shell-win.png
     "python-shell-win"
-  [Old Bailey Online screenshot]: ../images/obo.png "obo"
-  [Old Bailey Online page source]: ../images/obo-page-source.png
+  [Old Bailey Online screenshot]: {{ site.baseurl }}/images/obo.png "obo"
+  [Old Bailey Online page source]: {{ site.baseurl }}/images/obo-page-source.png
     "obo-page-source"
   [W3 Schools HTML tutorial]: http://www.w3schools.com/html/default.asp
   [Zotero]: http://www.zotero.org/
@@ -615,4 +615,4 @@ file to make sure you have the correct code.
   [Stack Overflow]: http://stackoverflow.com/
   [Tutor]: http://mail.python.org/mailman/listinfo/tutor
   [2]: http://oreilly.com/catalog/9780596513986/
-  [zip]: ../images/programming-historian.zip
+  [zip]: {{ site.baseurl }}/images/programming-historian.zip

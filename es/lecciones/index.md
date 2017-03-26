@@ -14,8 +14,8 @@ Detrás de tus investigaciones hay mucho trabajo. Asegúrate de que este esfuerz
 
 <ul class="lesson-images">
   <li>
-    <a href="{{site.url}}/es/lecciones/preservar-datos-de-investigacion">
-      <img src="{{site.url}}/gallery/preserving-your-research-data.png">
+    <a href="{{ site.baseurl }}/es/lecciones/preservar-datos-de-investigacion">
+      <img src="{{ site.baseurl }}/gallery/preserving-your-research-data.png">
       <h3>Preservar tus datos de investigación</h3>
       <p>James Baker</p>
     </a>
@@ -29,120 +29,120 @@ Introducción a Python
 
 <ul class="lesson-images">
   <li>
-    <a href="{{site.url}}/es/lessons/introduction-and-installation">
-      <img src="{{site.url}}/gallery/introduction-and-installation.png">
+    <a href="{{ site.baseurl }}/es/lessons/introduction-and-installation">
+      <img src="{{ site.baseurl }}/gallery/introduction-and-installation.png">
       <h3>Introducción a Python e instalación</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/mac-installation">
-      <img src="{{site.url}}/gallery/mac-installation.png">
+    <a href="{{ site.baseurl }}/es/lessons/mac-installation">
+      <img src="{{ site.baseurl }}/gallery/mac-installation.png">
       <h3>Creación de un entorno de desarrollo integrado para Python en Mac</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
       <li>
-    <a href="{{site.url}}/es/lessons/windows-installation">
-      <img src="{{site.url}}/gallery/windows-installation.png">
+    <a href="{{ site.baseurl }}/es/lessons/windows-installation">
+      <img src="{{ site.baseurl }}/gallery/windows-installation.png">
       <h3>Creación de un entorno de desarrollo integrado para Python en Windows</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
       <li>
-    <a href="{{site.url}}/es/lessons/linux-installation">
-      <img src="{{site.url}}/gallery/linux-installation.png">
+    <a href="{{ site.baseurl }}/es/lessons/linux-installation">
+      <img src="{{ site.baseurl }}/gallery/linux-installation.png">
       <h3>Creación de un entorno de desarrollo integrado para Python en Linux</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/viewing-html-files">
-      <img src="{{site.url}}/gallery/viewing-html-files.png">
+    <a href="{{ site.baseurl }}/es/lessons/viewing-html-files">
+      <img src="{{ site.baseurl }}/gallery/viewing-html-files.png">
       <h3>Para entender páginas web y HTML</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/working-with-text-files">
-      <img src="{{site.url}}/gallery/working-with-text-files.png">
+    <a href="{{ site.baseurl }}/es/lessons/working-with-text-files">
+      <img src="{{ site.baseurl }}/gallery/working-with-text-files.png">
       <h3>Trabajar con archivos de texto en Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/code-reuse-and-modularity">
-      <img src="{{site.url}}/gallery/code-reuse-and-modularity.png">
+    <a href="{{ site.baseurl }}/es/lessons/code-reuse-and-modularity">
+      <img src="{{ site.baseurl }}/gallery/code-reuse-and-modularity.png">
       <h3>Reutilización de código y modularidad en Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/working-with-web-pages">
-      <img src="{{site.url}}/gallery/working-with-web-pages.png">
+    <a href="{{ site.baseurl }}/es/lessons/working-with-web-pages">
+      <img src="{{ site.baseurl }}/gallery/working-with-web-pages.png">
       <h3>Descargar páginas web con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/manipulating-strings-in-python">
-      <img src="{{site.url}}/gallery/manipulating-strings-in-python.png">
+    <a href="{{ site.baseurl }}/es/lessons/manipulating-strings-in-python">
+      <img src="{{ site.baseurl }}/gallery/manipulating-strings-in-python.png">
       <h3>Manipular cadenas de texto en Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/from-html-to-list-of-words-1">
-      <img src="{{site.url}}/gallery/from-html-to-list-of-words-1.png">
+    <a href="{{ site.baseurl }}/es/lessons/from-html-to-list-of-words-1">
+      <img src="{{ site.baseurl }}/gallery/from-html-to-list-of-words-1.png">
       <h3>De HTML a una lista de palabras (parte 1)</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/from-html-to-list-of-words-2">
-      <img src="{{site.url}}/gallery/from-html-to-list-of-words-2.png">
+    <a href="{{ site.baseurl }}/es/lessons/from-html-to-list-of-words-2">
+      <img src="{{ site.baseurl }}/gallery/from-html-to-list-of-words-2.png">
       <h3>De HTML a una lista de palabras (parte 2)</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/normalizing-data">
-      <img src="{{site.url}}/gallery/normalizing-data.png">
+    <a href="{{ site.baseurl }}/es/lessons/normalizing-data">
+      <img src="{{ site.baseurl }}/gallery/normalizing-data.png">
       <h3>Normalizar datos textuales con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/counting-frequencies">
-      <img src="{{site.url}}/gallery/counting-frequencies.png">
+    <a href="{{ site.baseurl }}/es/lessons/counting-frequencies">
+      <img src="{{ site.baseurl }}/gallery/counting-frequencies.png">
       <h3>Contar frecuencias de palabras con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/creating-and-viewing-html-files-with-python">
-      <img src="{{site.url}}/gallery/creating-and-viewing-html-files-with-python.png">
+    <a href="{{ site.baseurl }}/es/lessons/creating-and-viewing-html-files-with-python">
+      <img src="{{ site.baseurl }}/gallery/creating-and-viewing-html-files-with-python.png">
       <h3>Crear y ver archivos HTML con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/output-data-as-html-file">
-      <img src="{{site.url}}/gallery/output-data-as-html-file.png">
+    <a href="{{ site.baseurl }}/es/lessons/output-data-as-html-file">
+      <img src="{{ site.baseurl }}/gallery/output-data-as-html-file.png">
       <h3>Salida de datos como un archivo HTML con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/keywords-in-context-using-n-grams">
-      <img src="{{site.url}}/gallery/keywords-in-context-using-n-grams.png">
+    <a href="{{ site.baseurl }}/es/lessons/keywords-in-context-using-n-grams">
+      <img src="{{ site.baseurl }}/gallery/keywords-in-context-using-n-grams.png">
       <h3>Palabras clave en contexto (Usar n-grams) con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>
   </li>
     <li>
-    <a href="{{site.url}}/es/lessons/output-keywords-in-context-in-html-file">
-      <img src="{{site.url}}/gallery/output-keywords-in-context-in-html-file.png">
+    <a href="{{ site.baseurl }}/es/lessons/output-keywords-in-context-in-html-file">
+      <img src="{{ site.baseurl }}/gallery/output-keywords-in-context-in-html-file.png">
       <h3>Salida de palabras clave en contexto en un archivo HTML con Python</h3>
       <p>William J. Turkel &amp; Adam Crymble</p>
     </a>

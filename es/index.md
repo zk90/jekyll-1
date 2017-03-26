@@ -6,7 +6,7 @@ redirect_from:  /about.html
 ---
 
 <figure>
-	<img src="../images/about.png" width="290px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
+	<img src="{{ site.baseurl }}/images/about.png" width="290px" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 </figure>
 
 *The Programming Historian en español* ofrece tutoriales para principiantes y revisados por pares, que ayudan a humanistas en el aprendizaje de una amplia gama de herramientas digitales, técnicas y flujos de trabajo para facilitar su investigación.

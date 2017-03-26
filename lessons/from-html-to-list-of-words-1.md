@@ -227,13 +227,13 @@ that’s ok!
 
 -   programming-historian-2 ([zip][])
 
-  [http://programminghistorian.org/lessons/working-with-web-pages]: ../lessons/working-with-web-pages
+  [http://programminghistorian.org/lessons/working-with-web-pages]: {{ site.baseurl }}/lessons/working-with-web-pages
   [Benjamin Bowsey’s 1780 criminal trial transcript]: http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33
   [HTML]: http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33-defend448&div=t17800628-33
   [XML]: http://www.oldbaileyonline.org/browse.jsp?foo=bar&path=sessionsPapers/17800628.xml&div=t17800628-33&xml=yes
   [1]: http://www.w3schools.com/html/
-  [zip file from the previous lesson here.]: ../lessons/manipulating-strings-in-python#code-syncing
-  [Manipulating Strings in Python]: ../lessons/manipulating-strings-in-python
-  [Code Reuse and Modularity]: ../lessons/code-reuse-and-modularity
-  [zip]: ../assets/python-lessons2.zip
-  [obo-t17800628-33.html]: ../assets/obo-t17800628-33.html
+  [zip file from the previous lesson here.]: {{ site.baseurl }}/lessons/manipulating-strings-in-python#code-syncing
+  [Manipulating Strings in Python]: {{ site.baseurl }}/lessons/manipulating-strings-in-python
+  [Code Reuse and Modularity]: {{ site.baseurl }}/lessons/code-reuse-and-modularity
+  [zip]: {{ site.baseurl }}/assets/python-lessons2.zip
+  [obo-t17800628-33.html]: {{ site.baseurl }}/assets/obo-t17800628-33.html
