@@ -7,7 +7,7 @@ categories: posts
 ---
 
 
-<p><figure><img src="/avatars/Matthew-Lincoln.png" alt=""/><figcaption>
+<p><figure><img src="{{ site.baseurl }}/avatars/Matthew-Lincoln.png" alt=""/><figcaption>
     Matthew Lincoln has joined the Programming Historian</figcaption></figure></p>
 
 

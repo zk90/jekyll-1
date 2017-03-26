@@ -41,12 +41,12 @@ Your First Lesson
 Look for more updates soon as we continue to add lessons and work on our
 organizational setup.
 
-  [Getting Started with Online Sources]: /lessons/viewing-html-files
-  [Working with Text Files]: /lessons/working-with-text-files
-  [From HTML to a List of Words ]: /lessons/from-html-to-list-of-words-1
-  [Computing Frequencies]: /lessons/counting-frequencies
-  [Wrapping Output in HTML]: /lessons/output-data-as-html-file
-  [Keywords in Context (KWIC)]: /lessons/keywords-in-context-using-n-grams
-  [Downloading Multiple Records Using Query Strings ]: /lessons/downloading-multiple-records-using-query-strings
-  [Automated Downloading with Wget]: /lessons/automated-downloading-with-wget
-  [Getting Started with Topic Modeling and MALLET]: /lessons/topic-modeling-and-mallet
+  [Getting Started with Online Sources]: {{ site.baseurl }}/lessons/viewing-html-files
+  [Working with Text Files]: {{ site.baseurl }}/lessons/working-with-text-files
+  [From HTML to a List of Words ]: {{ site.baseurl }}/lessons/from-html-to-list-of-words-1
+  [Computing Frequencies]: {{ site.baseurl }}/lessons/counting-frequencies
+  [Wrapping Output in HTML]: {{ site.baseurl }}/lessons/output-data-as-html-file
+  [Keywords in Context (KWIC)]: {{ site.baseurl }}/lessons/keywords-in-context-using-n-grams
+  [Downloading Multiple Records Using Query Strings ]: {{ site.baseurl }}/lessons/downloading-multiple-records-using-query-strings
+  [Automated Downloading with Wget]: {{ site.baseurl }}/lessons/automated-downloading-with-wget
+  [Getting Started with Topic Modeling and MALLET]: {{ site.baseurl }}/lessons/topic-modeling-and-mallet

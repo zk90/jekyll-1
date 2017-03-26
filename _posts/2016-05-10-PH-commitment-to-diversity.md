@@ -22,7 +22,7 @@ We think this is the right approach. As a volunteer project, we don't have the f
 
 1. Outreach:
   * Greater social media presence
-  * Blogging about the process of creating lessons / how they tie to research
+  * Blogging about the process of creating lessons {{ site.baseurl }}/ how they tie to research
   * Target non-DH audiences
   * More face-to-face workshops
   * Advertise women's contributions during Women's History Month
